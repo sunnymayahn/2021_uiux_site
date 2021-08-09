@@ -50,11 +50,13 @@
 }
 .banner .bannerWrap li img{display: block;margin: 0 auto;margin-bottom: 10px;}
 .banner .bannerWrap .txt p{display: none;}
-.bannerWrap li:nth-child(1){background: #7C99B9;}
+.bannerWrap li:nth-child(1){display: none;}
 .bannerWrap li:nth-child(2){background: #4F74A1;}
 .bannerWrap li:nth-child(3){background: #4B8CE0;}
 .bannerWrap li:nth-child(4){background: #3DB5F2;}
-.bannerWrap li:nth-child(5){display: none;}
+.bannerWrap li:nth-child(5){background:#95C8FF}
+
+
 }  /* mobile */
 
 
@@ -108,11 +110,12 @@
     color: #fff;
     padding: 20px 10px;text-align: center;}
 
-.banner .bannerWrap li img{margin-bottom: 5px;}
+.banner .bannerWrap li img{margin-bottom: 3px;}
 .banner .bannerWrap li h3{font-size: 18px;margin-bottom: 5px;}
 .banner .bannerWrap li p{font-size: 14px;letter-spacing: -1px;}
 
-.bannerWrap li:first-child{height:}
+.bannerWrap li:first-child{height: 195px;} 
+/* 하나만 사이즈 안맞아서 임의적으로 하나만 크기맞춤  */
 .bannerWrap li:nth-child(1){background:#7C99B9}
 .bannerWrap li:nth-child(2){background:#4F74A1}
 .bannerWrap li:nth-child(3){background:#4B8CE0}
