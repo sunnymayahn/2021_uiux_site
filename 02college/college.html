@@ -14,8 +14,11 @@
             <script>
                 $(document).ready(function(){
                 $('.slider').bxSlider({
+                    mode:'fade',
+                    pager:true,
+                    controls:true
                    });         
-            });//jquery ready
+            });
         </script>
 
     <style>
@@ -57,6 +60,7 @@
 
         .content{margin: 0 auto; width: 1200px}   
         .slider{width: 75%;height: 450px;}
+        .slider li img{width: 100%;}
         .bx-wrapper {
                 -moz-box-shadow: 0 none;
                 -webkit-box-shadow: 0 none;
@@ -143,7 +147,7 @@
     <section class="content">
         <div class="con1 clearfix">
             <ul class="slider">
-                <li><img src="images/배경02_01.PNG" alt="#">
+                <li><img src="images/bg02.PNG" alt="#">
                 <div class="sliderTxt">
                     <h1>한국에서 <br>시작하는 <br>새로운 꿈</h1>
                     <button class="white">자세히보기</button>
