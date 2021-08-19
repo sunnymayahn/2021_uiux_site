@@ -146,7 +146,7 @@ body{
     ----------------------
     한국 시작 꿈 bold <b>주기 쌤소스보기/다른슬라이드이미지에도 적용하기
     
-    .sliderTxt{position: absolute;top: 60px;left: 80px; color: white }
-    .sliderTxt h1{font-size: 50px;line-height: 60px; margin-bottom: 20px; color:#E63A2D }
-    .sliderTxt .btn{width: 140px;height: 36px;background-color: #E63A2D;text-align: center;} 
-    .sliderTxt .btn a{color: white;line-height: 36px;}   
+    .slider2Txt{position: absolute;top: 60px;left: 80px; color: white }
+    .slider2Txt h1{font-size: 50px;line-height: 60px; margin-bottom: 20px; color:#E63A2D }
+    .slider2Txt .btn{width: 140px;height: 36px;background-color: #E63A2D;text-align: center;} 
+    .slider2Txt .btn a{color: white;line-height: 36px;}   
