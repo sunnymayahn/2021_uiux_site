@@ -56,7 +56,7 @@
                                 color: #fff;line-height: 70px;
                             text-shadow: 0 0 10px rgba(0,0,0,0.4);}
                            /* 박스 텍스트새도우 x값 y값 번짐값 투명도 */
-.visualWrap .visual img{position: absolute;bottom: -20px;right: -55px; }
+.visualWrap .visual img{position: absolute;bottom: -40px;right: -25px; }
 
 
 
@@ -113,6 +113,7 @@ left: 50%;top: 50%;margin-left: -15px ; margin-top:-1px ;}
 
 
     /* footer mobile test */
+    /* pc버전에서 980사이즈 삭제, 위치값 관련 스타일 조정, 버튼이미지 포지션fixed 위치값 */
     footer#footer{background-color: #5E5E5E;}
     .footWrap{background-color: #4D4D4D; height: 40px;}
     /* .footWrap>.foot{ width: 980px; margin: 0 auto;height: 40px;} */
@@ -120,7 +121,7 @@ left: 50%;top: 50%;margin-left: -15px ; margin-top:-1px ;}
     .footWrap>.foot>.fmenu>ul>li{float: left;width: calc(100% / 3);}
     .footWrap>.foot>.fmenu>ul>li>a{
         display: block;text-align: center;line-height: 20px;
-        height: :20px; padding: 10px 5px ; 
+        height:20px; padding: 10px 5px ; 
         color: white; font-size: 10px; letter-spacing: 70%;
         position: relative;}
     .footWrap>.foot>.fmenu>ul>li>a:hover{background-color: slateblue;}
@@ -181,9 +182,9 @@ left: 50%;top: 50%;margin-left: -15px ; margin-top:-1px ;}
                         font-size: 79px;font-weight: bold;
                         line-height: 92px;
                         position: absolute; top: 50%;margin-top: -105px;
-                        color: #fff;text-shadow: 0 0 10px; rgba(0,0,0,0.4);}
+                        color: #fff;text-shadow: 0 0 10px rgba(0,0,0,0.4);}
 
-    .visualWrap .visual img{position:absolute;right: 0; bottom: -20px; }
+    .visualWrap .visual img{position:absolute;right: 0; bottom: -40px; }
 
 
 /* banner */
@@ -237,15 +238,15 @@ left: 50%;top: 50%;margin-left: -15px ; margin-top:-1px ;}
 
 /* footer test */
 footer#footer{background-color: #5E5E5E;}
-    .footWrap{background-color: #4D4D4D; height: 41px;}
-    .footWrap>.foot{ width: 980px; margin: 0 auto;height: 41px;
+    .footWrap{background-color: #4D4D4D; height: 40px;}
+    .footWrap>.foot{ width: 980px; margin: 0 auto;height: 40px;
                 }
     
     .footWrap>.foot>.fmenu{width: 420px; float: left;}
     .footWrap>.foot>.fmenu>ul>li{float: left;width: 140px;}
     .footWrap>.foot>.fmenu>ul>li>a{
         display: block;text-align: center;line-height: 20px;
-        height: :20px; padding: 10px 5px ; 
+        height: 20px; padding: 10px 5px ; 
         color: white; font-size: 10px; letter-spacing: 70%;
         position: relative;}
     .footWrap>.foot>.fmenu>ul>li>a:hover{background-color: slateblue ;}
