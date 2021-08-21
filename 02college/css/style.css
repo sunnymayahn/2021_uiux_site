@@ -23,7 +23,6 @@ body{
 .util_menu .right a{display: block ;line-height: 40px;
                     color: #fff; padding: 0 10px; }
 
-.util_menu .right li:nth-child(2){}
 .util_menu .right li:nth-child(2) a{
            float: left;background: #fff;color: #000;
             line-height: 20px;width: 20px;padding: 0;text-align: center;
@@ -39,6 +38,16 @@ body{
     nav.gnb li a{font-size:17px; color: #7A7A7A; line-height: 66px; }
 
 /* contents     */
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    margin-bottom: 0;}
+.bx-wrapper .bx-pager{ 
+    bottom: 30px;}
+
+
 .contents{
    height: 1300px;    /* 나중에 삭제 */
    min-width: 1200px;
@@ -67,16 +76,15 @@ body{
            
     .container{width: 1200px;margin: 0 auto;background: #ddd;}
     .container>ul>li{float: left;width: 25%;height: 225px;}
+    
     .container>ul>li:nth-child(2n){background: pink;}
 
-    .container>ul>li:nth-child(1){width: 75%;height: 450px;font-family: 'Noto Sans KR', sans-serif;}
-        .bx-wrapper {-moz-box-shadow: 0 none;
-            -webkit-box-shadow: 0 none; box-shadow: 0 none;
-            border: 0 none; margin-bottom: 0;  }
-        .bx-wrapper .bx-pager{ bottom:20px;}
+    .container>ul>li:nth-child(1){width: 75%;height: 450px;
+                            font-family: 'Noto Sans KR', sans-serif;}
+        
 
-        .sliderTxt{position: absolute;top: 60px;left: 80px; color: white }
-        .sliderTxt h1{font-size: 50px;line-height: 60px; margin-bottom: 20px; color:#1651B7 }
+        .sliderTxt{position: absolute;top: 60px;left: 80px; }
+        .sliderTxt p{font-size: 50px;line-height: 60px; margin-bottom: 20px; color:#1651B7 }
         .sliderTxt .btn{width: 140px;height: 36px;background-color: #182C4D;text-align: center;} 
         .sliderTxt .btn a{color: white;line-height: 36px;}   
 
@@ -139,14 +147,51 @@ body{
                                 margin-top: -20px;margin-left: -20px;opacity: 0.7  ;} 
 
 
-    .container>ul>li:nth-child(8){width: 75%;}
+    .container>ul>li:nth-child(8){width: 75%;height: 220px;
+                             font-family: 'Noto Sans KR', sans-serif;
+                             }
+         .bx-wrapper {
+            -moz-box-shadow: 0 none;
+        -webkit-box-shadow: 0 none; box-shadow: 0 none;
+        border: 0 none; margin-bottom: 0;  }
+         .bx-wrapper.bx-pager{bottom:20px;}
+
+        /* .slider2{position: relative;} */
+
+        .slider2Txt{position: absolute;top: 20px;left: 40px;  }
+           
+        .slider2Txt>h1{font-size: 35px;  font-weight: 400; 
+                        color:#E63A2D ; opacity: 0.8;}
+        .slider2Txt>h2{font-size: 55px;line-height: 60px; margin-bottom: 20px; color:#E63A2D }
+        .slider2Txt>.btn{width: 140px;height: 36px;background-color: #E63A2D;
+                        text-align: center;opacity: 0.9;} 
+        .slider2Txt .btn a{color: white;font-size: 16px; line-height: 36px;}   
+
+
+.footer {width: 1200px;margin: 0 auto;padding: 25px 0;  background-color: skyblue;
+    display: flex;justify-content: center; align-items: center; }
+.footer img {width: 270px;float: left; margin-right: 30px; }
+.fWrap{width: 900px;float: right;}
+.fmenu>ul>li{float: left;margin-bottom: 20px;}
+.fmenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
+    padding: 0 15px; border-right: 1px solid gray ;color: gray;}
+.fmenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
+.fmenu>ul>li:last-child>a{border-right: none;}
+.fmenu>ul>li>a:hover{background-color: navy;color: white; }  
+.info{color: gray;font-size: 13px;line-height: 18px;}
+.info p {margin-bottom: 5px;}
 
 
 
+
+ 
+/* 
     ----------------------
-    한국 시작 꿈 bold <b>주기 쌤소스보기/다른슬라이드이미지에도 적용하기
-    
-    .slider2Txt{position: absolute;top: 60px;left: 80px; color: white }
-    .slider2Txt h1{font-size: 50px;line-height: 60px; margin-bottom: 20px; color:#E63A2D }
-    .slider2Txt .btn{width: 140px;height: 36px;background-color: #E63A2D;text-align: center;} 
-    .slider2Txt .btn a{color: white;line-height: 36px;}   
+    한국 시작 꿈 bold <b>주기 쌤소스보기/
+    1st 컨트롤즈 모양
+    8th 컨트롤즈 빼고 페이저 우상단
+    다른슬라이드이미지에도 적용하기
+    로고이미지
+    포샵조정
+    인데스 클래스이름 정리하기
+    모발버전테스트해보기 */
