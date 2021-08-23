@@ -50,6 +50,7 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 .bx-wrapper .bx-pager{ 
     bottom: 30px;}
 
+.slider2>.bx-wrapper .bx-Pager{top: 40px !important;}
 
 .contents{
    height: 1300px;    /* 나중에 삭제 */
@@ -136,7 +137,7 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 
     .container>ul>li:nth-child(6){background-image: url(../images/con_bg.png);position: relative;}
     .container>ul>li:nth-child(6) .box {position: absolute;bottom: 0;
-        width: 300px;height: 50px;
+                                  width: 300px;height: 50px;
                                   background-color: black;opacity: 0.7; text-align: center;
                                 color: white;line-height: 50px;} 
 
@@ -154,8 +155,9 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
                              font-family: 'Noto Sans KR', sans-serif;
                              }
          
-        /* .slider2{position: relative;} */
-
+         /* .slider2{position: relative;} */
+         /* .slider2>li>.bx-Pager{position: absolute;right: 40px ;}  */
+       
         .slider2Txt{position: absolute;top: 20px;left: 40px;  }
            
         .slider2Txt>h1{font-size: 35px;  font-weight: 400; 
@@ -164,19 +166,19 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
         .slider2Txt>.btn{width: 140px;height: 36px;background-color: #E63A2D;
                         text-align: center;opacity: 0.9;} 
         .slider2Txt .btn a{color: white;font-size: 16px; line-height: 36px;}   
-
+        
 
 .footer {width: 1200px;margin: 0 auto;padding: 25px 0;  
-        background-color: skyblue;position: relative;}
+        ;position: relative;}
 .footer img {float: left;height: 55px;position: 
              absolute; top: 50%;margin-top: -30px; }
 .fWrap{width: 900px;float: right;}
-.fmenu>ul>li{float: left;margin-bottom: 20px;}
-.fmenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
+.fMenu>ul>li{float: left;margin-bottom: 20px;}
+.fMenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
     padding: 0 15px; border-right: 1px solid gray ;color: gray;}
-.fmenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
-.fmenu>ul>li:last-child>a{border-right: none;}
-.fmenu>ul>li>a:hover{background-color: navy;color: white; }  
+.fMenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
+.fMenu>ul>li:last-child>a{border-right: none;}
+.fMenu>ul>li>a:hover{background-color: navy;color: white; }  
 .info{color: gray;font-size: 13px;line-height: 18px;}
 .info p {margin-bottom: 5px;}
 
@@ -184,10 +186,8 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 
 
  
-/* 
-    ----------------------
+/*  opacity말고 rgba사용법
     한국 시작 꿈 bold h1에는 <b>안되나?
-    1st 컨트롤즈 모양 페이저활성화 색깔
-    8th 컨트롤즈 빼고 페이저 우상단 페이저색깔
-    
-    모발버전테스트해보기 */
+    1st 컨트롤즈 모양 
+    8th 페이저 위치변경 우상단 페이저색 
+    모발버전테스트 */
