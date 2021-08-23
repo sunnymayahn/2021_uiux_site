@@ -3,6 +3,168 @@ body{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;
 }
+.toggle{
+    width: 35px;height: 35px;border: 1px solid #aaa;
+        position: relative;cursor: pointer;display: none; }
+.toggle div{
+    width: 24px;height: 3px;background: #aaa;
+    border-radius: 1.5px;
+    position: absolute;left: 50%;
+    margin-left: -12px; }
+
+    .toggle div.bar1{top: 8px;}
+    .toggle div.bar2{top: 50%;margin-top: -1.5px;}
+    .toggle div.bar3{bottom: 8px;}
+
+@media screen and (max-width:699px) {
+
+/* header */
+#header{padding: 10px;}
+.utilMenu, .mainMenu li, .btn{display: none }
+
+.mainMenu> img{ float: left;height: 55px;margin-top: 10px; }
+.mainMenu> .toggle{float: right;}   
+.toggle{display: block;}
+
+
+
+/* contents     */
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    margin-bottom: 0;}
+.bx-wrapper .bx-pager{ 
+    bottom:10px;}
+
+.slider2>.bx-wrapper .bx-Pager{top: 40px !important;}
+
+.contents{
+   
+    
+    background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
+     
+    background-repeat: repeat,no-repeat ;
+    background-position: center;
+    background-size:auto,cover;
+    padding-top: 75px;
+    }
+
+    .contents .title{margin-bottom: 20px;padding: 22px;}
+    
+           .titleTxt{height: 130px; color: white;text-align: center;}
+           .titleTxt p{font-size: 30px; }
+           .titleTxt h1{font-size: 40px;}
+           /* .titleMenu{text-align: center;} */
+           /* .titleMenu{float: right; width: 430px;height: 130px;} */
+           .titleMenu li{float: left;margin-right: 20px;}
+          
+           .titleMenu li a{color: white; text-align: center;display: block;line-height: 40px;}
+   
+           
+    .container{background: #ddd;}
+    .container>ul>li{float: left;width: 25%;height: 150px;}
+
+    .container>ul>li:nth-child(1){width: 75%; overflow: hidden;
+                            font-family: 'Noto Sans KR', sans-serif;}
+        
+        .sliderTxt{position: absolute;top: 40px;left: 40px; }
+        .sliderTxt p{font-size: 30px;line-height: 30px; margin-bottom: 20px; color:#1651B7 }
+            
+
+    .container>ul>li:nth-child(2){
+        background-image: url(../images/bg03_01.png);
+        background-position: center; padding: 10px;  }
+    .container>ul>li:nth-child(2)>h2{font-size: 20px; color:white;line-height: 20px; }   
+    .container>ul>li:nth-child(2)>p{display: none}
+    
+    .container>ul>li:nth-child(3){padding: 28px; background-color:#00163B;}
+    .container>ul>li:nth-child(3)>h2{color: white;margin-bottom: 20px;}                
+    .container>ul>li:nth-child(3)>p{display: none;}
+    .container>ul>li:nth-child(3)>.linkMenu>ul>li{ display: none;}
+    /* .container>ul>li:nth-child(3)>.linkMenu>ul>li{float: left;padding: 5px;}
+    .container>ul>li:nth-child(3)>.linkMenu>ul>li img{margin-bottom: 2px; width: 30px;height: 30px;}
+    .container>ul>li:nth-child(3)>.linkMenu>ul>li a{ display: block; text-align: center; color: white;
+                                      font-size: 10px;line-height: 15px;} */
+
+
+    .container>ul>li:nth-child(4){padding: 28px; background-color:#1651B7;}
+    .container>ul>li:nth-child(4)>h2{color: white;margin-bottom: 15px;} 
+    
+    .container>ul>li:nth-child(4) .notice>ul>li {display: none;}
+    /* .container>ul>li:nth-child(4)>.line{width: 260px;height: 2px; background-color: #fff;margin-bottom: 10px;}
+        .container>ul>li:nth-child(4) .notice>ul>li {color: white;font-size: 13px;line-height: 28px;position: relative;}
+    .container>ul>li:nth-child(4) .notice>ul>li a{color: white;}
+    .container>ul>li:nth-child(4) .notice>ul>li span{position: absolute;right: 0;}
+   */
+
+    .container>ul>li:nth-child(5){padding: 28px; background-color:white;}
+
+    /* .container>ul>li:nth-child(5) .conWrap{background: skyblue;} */
+    .container>ul>li:nth-child(5) .conWrap h2{margin-bottom:15px;color:#00163B;font-weight: bold;}
+     .container>ul>li:nth-child(5) .conWrap .news{display: block;}
+    /* .container>ul>li:nth-child(5) .conWrap .news{margin-bottom:20px;}
+    .container>ul>li:nth-child(5) .conWrap .news img{float: left;margin-right:10px;height: 100%;}
+    .container>ul>li:nth-child(5) .conWrap .news p{color: gray;line-height: 16px;}
+    .container>ul>li:nth-child(5) .conWrap .sns{margin-left: auto;width: 129px;}
+    .container>ul>li:nth-child(5) .conWrap .sns li{float: left;width: 30px;height: 30px;margin-right:3px;}
+    .container>ul>li:nth-child(5) .conWrap .sns li:last-child{margin-right: 0;} */
+
+
+    .container>ul>li:nth-child(6){background-image: url(../images/con_bg.png);position: relative;}
+    .container>ul>li:nth-child(6) .box {position: absolute;bottom: 0;
+                                  width: 300px;height: 50px;
+                                  background-color: black;opacity: 0.7; text-align: center;
+                                color: white;line-height: 50px;} 
+
+    /* .container>ul>li:nth-child(7){background-image: url(../images/con_bg2.png);
+                               display: flex; text-justify: center ; align-items: center}
+     display: flex; text-justify: center ; align-items: center는 img아니고 부모요소에 설정 
+                                                   !!!그런데 X축 가운데가 안됨!!!! */
+    
+    .container>ul>li:nth-child(7){background-image: url(../images/con_bg2.png);position: relative; }
+    .container>ul>li:nth-child(7)>a img{ position: absolute;top: 50%;left: 50%;
+                                margin-top: -20px;margin-left: -20px;opacity: 0.7  ;} 
+
+
+    .container>ul>li:nth-child(8){width: 75%;height: 220px;
+                             font-family: 'Noto Sans KR', sans-serif;
+                             }
+         
+         /* .slider2{position: relative;} */
+         /* .slider2>li>.bx-Pager{position: absolute;right: 40px ;}  */
+       
+        .slider2Txt{position: absolute;top: 20px;left: 40px;  }
+           
+        .slider2Txt>h1{font-size: 35px;  font-weight: 400; 
+                        color:#E63A2D ; opacity: 0.8;}
+        .slider2Txt>h2{font-size: 55px;line-height: 60px; margin-bottom: 20px; color:#E63A2D }
+        .slider2Txt>.btn{width: 140px;height: 36px;background-color: #E63A2D;
+                        text-align: center;opacity: 0.9;} 
+        .slider2Txt .btn a{color: white;font-size: 16px; line-height: 36px;}   
+        
+
+.footer {width: 1200px;margin: 0 auto;padding: 25px 0;  
+        ;position: relative;}
+.footer img {float: left;height: 55px;position: 
+             absolute; top: 50%;margin-top: -30px; }
+.fWrap{width: 900px;float: right;}
+.fMenu>ul>li{float: left;margin-bottom: 20px;}
+.fMenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
+    padding: 0 15px; border-right: 1px solid gray ;color: gray;}
+.fMenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
+.fMenu>ul>li:last-child>a{border-right: none;}
+.fMenu>ul>li>a:hover{background-color: navy;color: white; }  
+.info{color: gray;font-size: 13px;line-height: 18px;}
+.info p {margin-bottom: 5px;}
+
+
+} /* 모바일 */
+
+
+@media screen and (min-width:700px){
+
 /* header */
 #header{min-width: 1200px;}
 .utilWrap{background: #0044AF}
@@ -50,6 +212,7 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 .bx-wrapper .bx-pager{ 
     bottom: 30px;}
 
+.slider2>.bx-wrapper .bx-Pager{top: 40px !important;}
 
 .contents{
    height: 1300px;    /* 나중에 삭제 */
@@ -136,7 +299,7 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 
     .container>ul>li:nth-child(6){background-image: url(../images/con_bg.png);position: relative;}
     .container>ul>li:nth-child(6) .box {position: absolute;bottom: 0;
-        width: 300px;height: 50px;
+                                  width: 300px;height: 50px;
                                   background-color: black;opacity: 0.7; text-align: center;
                                 color: white;line-height: 50px;} 
 
@@ -154,8 +317,9 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
                              font-family: 'Noto Sans KR', sans-serif;
                              }
          
-        /* .slider2{position: relative;} */
-
+         /* .slider2{position: relative;} */
+         /* .slider2>li>.bx-Pager{position: absolute;right: 40px ;}  */
+       
         .slider2Txt{position: absolute;top: 20px;left: 40px;  }
            
         .slider2Txt>h1{font-size: 35px;  font-weight: 400; 
@@ -164,30 +328,24 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
         .slider2Txt>.btn{width: 140px;height: 36px;background-color: #E63A2D;
                         text-align: center;opacity: 0.9;} 
         .slider2Txt .btn a{color: white;font-size: 16px; line-height: 36px;}   
-
+        
 
 .footer {width: 1200px;margin: 0 auto;padding: 25px 0;  
-        background-color: skyblue;position: relative;}
+        ;position: relative;}
 .footer img {float: left;height: 55px;position: 
              absolute; top: 50%;margin-top: -30px; }
 .fWrap{width: 900px;float: right;}
-.fmenu>ul>li{float: left;margin-bottom: 20px;}
-.fmenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
+.fMenu>ul>li{float: left;margin-bottom: 20px;}
+.fMenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
     padding: 0 15px; border-right: 1px solid gray ;color: gray;}
-.fmenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
-.fmenu>ul>li:last-child>a{border-right: none;}
-.fmenu>ul>li>a:hover{background-color: navy;color: white; }  
+.fMenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
+.fMenu>ul>li:last-child>a{border-right: none;}
+.fMenu>ul>li>a:hover{background-color: navy;color: white; }  
 .info{color: gray;font-size: 13px;line-height: 18px;}
 .info p {margin-bottom: 5px;}
 
 
 
 
- 
-/* 
-    ----------------------
-    한국 시작 꿈 bold h1에는 <b>안되나?
-    1st 컨트롤즈 모양
-    8th 컨트롤즈 빼고 페이저 우상단
-    인데스 클래스이름 정리하기
-    모발버전테스트해보기 */
+}
+
