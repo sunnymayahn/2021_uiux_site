@@ -49,8 +49,10 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
     margin-bottom: 0;}
 .bx-wrapper .bx-pager{ 
     bottom: 30px;}
+.move [.bx-wrapper .bx-Pager]{top: 30px;}
+/* .slider2 .bx-wrapper .bx-pager{ top: 30px;} */
 
-.slider2>.bx-wrapper .bx-Pager{top: 40px !important;}
+
 
 .contents{
    height: 1300px;    /* 나중에 삭제 */
@@ -149,14 +151,13 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
     .container>ul>li:nth-child(7){background-image: url(../images/con_bg2.png);position: relative; }
     .container>ul>li:nth-child(7)>a img{ position: absolute;top: 50%;left: 50%;
                                 margin-top: -20px;margin-left: -20px;opacity: 0.7  ;} 
-
+    
 
     .container>ul>li:nth-child(8){width: 75%;height: 220px;
                              font-family: 'Noto Sans KR', sans-serif;
                              }
-         
-         /* .slider2{position: relative;} */
-         /* .slider2>li>.bx-Pager{position: absolute;right: 40px ;}  */
+    /* .container>ul>li:nth-child(8).bx-wrapper .bx-Pager{top: 30px; right: 30px;} */
+    
        
         .slider2Txt{position: absolute;top: 20px;left: 40px;  }
            
