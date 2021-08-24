@@ -30,11 +30,10 @@ body{
 
 .mainMenu{width: 1200px;margin: 0 auto;
                 height: 115px; 
-                padding: 25px 0;
-                background-color: skyblue;}
+                padding: 25px 0;}
 .mainMenu> img{ float: left;height: 55px;margin-top: 10px;}
 nav.gnb {float: right; }  
-nav.gnb li{float: left;background-color: beige ;
+nav.gnb li{float: left;
         text-align: right;padding: 0 30px;height: 65px;}
 nav.gnb li a{font-size:17px; color: #7A7A7A; line-height: 65px; display: block; }
 nav.gnb>li>a>img {height: 45px; }
@@ -47,11 +46,10 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
     box-shadow: none;
     border: 0 none;
     margin-bottom: 0;}
-.bx-wrapper .bx-pager{ 
-    bottom: 30px;}
-.move [.bx-wrapper .bx-Pager]{top: 30px;}
-/* .slider2 .bx-wrapper .bx-pager{ top: 30px;} */
-
+.bx-wrapper .bx-pager{ bottom: 30px;}
+.bx-wrapper .bx-pager.bx-default-pager a.active{background: blue;}
+    
+        
 
 
 .contents{
@@ -99,7 +97,10 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
         background-position: center; padding: 80px 50px;  }
     .container>ul>li:nth-child(2)>h2{font-size: 30px;margin-bottom: 30px; color:white;line-height: 35px; }   
     .container>ul>li:nth-child(2)>p{font-size: 16px; color: white;margin-bottom: 50px;line-height: 20px; }
-    .container>ul>li:nth-child(2)>.btn{width: 140px;height: 36px;background-color: #2c1f06;opacity: 0.5; text-align: center;} 
+    .container>ul>li:nth-child(2)>.btn{width: 140px;height: 36px;
+          /* background-color: #2c1f06;opacity: 0.5;  */
+          background: rgba(51,34,1, 0.8);
+          text-align: center;} 
     .container>ul>li:nth-child(2)>.btn a{color: white;line-height: 36px;}  
          
     .container>ul>li:nth-child(3){padding: 28px; background-color:#00163B;}
@@ -156,16 +157,19 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
     .container>ul>li:nth-child(8){width: 75%;height: 220px;
                              font-family: 'Noto Sans KR', sans-serif;
                              }
-    /* .container>ul>li:nth-child(8).bx-wrapper .bx-Pager{top: 30px; right: 30px;} */
-    
+    .container>ul>li:nth-child(8) .bx-pager{top: 30px; right: 20px;width: 150px;}
+    .container>ul>li:nth-child(8) .bx-pager.bx-default-pager a.active{background: #DE2120;}
+
        
         .slider2Txt{position: absolute;top: 20px;left: 40px;  }
            
         .slider2Txt>h1{font-size: 35px;  font-weight: 400; 
-                        color:#E63A2D ; opacity: 0.8;}
-        .slider2Txt>h2{font-size: 55px;line-height: 60px; margin-bottom: 20px; color:#E63A2D }
-        .slider2Txt>.btn{width: 140px;height: 36px;background-color: #E63A2D;
-                        text-align: center;opacity: 0.9;} 
+                        color:#DE2120 ;}
+        .slider2Txt>h2{font-size: 55px;line-height: 60px; margin-bottom: 20px; color:#DE2120 }
+        .slider2Txt>.btn{width: 140px;height: 36px;
+                        /* background-color: #DE2120; opacity: 0.9;*/
+                        background:rgba(218,19,25,0.85);
+                        text-align: center; } 
         .slider2Txt .btn a{color: white;font-size: 16px; line-height: 36px;}   
         
 
@@ -187,8 +191,8 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 
 
  
-/*  opacity말고 rgba사용법
-    한국 시작 꿈 bold h1에는 <b>안되나?
-    1st 컨트롤즈 모양 
-    8th 페이저 위치변경 우상단 페이저색 
+/*  컬러박스사용
+    1st 컨트롤즈 모양 페이저색 
+    8th 페이저 위치변경 우상단 
+                경로지정 nth-child(8) .bx-pager{top right width값전체다차지하고있어조정}
     모발버전테스트 */
