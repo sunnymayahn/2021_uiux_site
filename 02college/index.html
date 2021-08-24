@@ -22,6 +22,25 @@
         $(document).ready(function(){
             $(".slider1").bxSlider();
             $(".slider2").bxSlider({controls:false});  
+            var myslide = $('.slider3').
+            bxSlider({
+                mode:'vertical',
+                pager:false,
+                controls:false});
+            
+            // $(".slider3").bxSlider({
+            //     pager:false,
+            //     controls:false});
+
+            $('.upBtn').click(function(){
+                myslide.goToPrevSlide(); 
+               });
+            $('.downBtn').click(function(){
+                myslide.goToNextSlide();
+               });
+
+
+
             $(".youtube").colorbox({
                 iframe:true,
                 innerWidth:700,
@@ -219,8 +238,45 @@
              
             </ul>
         </div>
-    </div>
 
+        <div class="conBottom clearfix">
+           
+            <div class="btmPlan">
+                <h3>학사일정</h3>
+                <p>  < 2016 07 > </p>
+            </div>
+
+            <div class="sdrWrap">
+                <ul class="slider3">
+                    <li>
+                        <h4>2016 - 1학기 성적 열람및 상담신청</h4>
+                        <p> 2016-1 성적열람및 상담신청은 수강한 교과목 설문조사를 모두 마친후</p>
+                    </li>
+                    <li>
+                        <h4>2017 - 2학기 성적 열람및 상담신청</h4>
+                        <p> 2017-2 성적열람및 상담신청은 수강한 교과목 설문조사를 모두 마친후</p>
+                    </li>
+                    <li>
+                        <h4>2018-1학기 성적 열람및 상담신청</h4>
+                        <p> 2018-1 성적열람및 상담신청은 수강한 교과목 설문조사를 모두 마친후</p>
+                    </li>
+                   
+                </ul>
+
+                <div class="btnWrap">
+                <div class="upBtn">
+                    <img src="images/arup.PNG " alt="">
+                </div>
+                <div class="downBtn">
+                    <img src="images/ardown.PNG " alt="">
+                </div>
+               </div>
+
+            </div> 
+
+        </div>
+
+    </div>
 
 <footer class="footer clearfix">
     <img src="images/logo.png" alt="#">
