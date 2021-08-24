@@ -168,10 +168,41 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
         .slider2Txt>h2{font-size: 55px;line-height: 60px; margin-bottom: 20px; color:#DE2120 }
         .slider2Txt>.btn{width: 140px;height: 36px;
                         /* background-color: #DE2120; opacity: 0.9;*/
-                        background:rgba(218,19,25,0.85);
+                        background:rgba(218,19,25,0.8);
                         text-align: center; } 
         .slider2Txt .btn a{color: white;font-size: 16px; line-height: 36px;}   
+
         
+
+.conBottom{width: 1200px;margin: 0 auto; 
+    background-color: white;
+    /* height: 60px; */
+    line-height: 60px;
+    margin-top: 20px;}
+
+.btmPlan{float: left; width: 25%;
+        font-weight: bold;
+        border-right: 1px solid gray;
+}
+.btmPlan>h3{float: left; width: 50%;padding: 0 20px;
+             font-size: 18px; text-align: center;
+                 background:skyblue;}
+.btmPlan>p{float: right;width: 50%; text-align: left; 
+         font-size: 16px; background: orange;}
+
+.sdrWrap{float: right;width: 75%;  
+    position: relative;color: #666;
+    background-color:pink;
+}
+.slider3>li{height: 60px;}
+.slider3>li>h4{float: left;width: 300px;font-weight: bold; text-align: center;background:yellow}
+.slider3>li>p{float:left;width: 550px;text-align: left; background:yellowgreen;}
+
+.btnWrap{float: right;cursor:pointer}
+.upBtn{position: absolute;;top: 0;right: 0;}
+.downBtn{position: absolute; bottom: 0;right: 0;}
+
+
 
 .footer {width: 1200px;margin: 0 auto;padding: 25px 0;  
         ;position: relative;}
@@ -180,7 +211,8 @@ nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }
 .fWrap{width: 900px;float: right;}
 .fMenu>ul>li{float: left;margin-bottom: 20px;}
 .fMenu>ul>li>a{display: block;text-justify : center;line-height: 14px;
-    padding: 0 15px; border-right: 1px solid gray ;color: gray;}
+    padding: 0 15px; border-right: 1px solid gray ;color: #666;
+    font-weight: bold;}
 .fMenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
 .fMenu>ul>li:last-child>a{border-right: none;}
 .fMenu>ul>li>a:hover{background-color: navy;color: white; }  
