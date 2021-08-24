@@ -20,7 +20,8 @@ body{
 .utilMenu .left a:hover{background: #fff;color: #333;}
 
 .utilMenu .right li{float: left;}
-.utilMenu .right a{display: block ;line-height: 40px;
+.utilMenu .right a{display: block ;
+                    line-height: 40px;
                     color: #fff; padding: 0 10px; }
 
 .utilMenu .right li:nth-child(2) a{
@@ -35,7 +36,8 @@ body{
 nav.gnb {float: right; }  
 nav.gnb li{float: left;
         text-align: right;padding: 0 30px;height: 65px;}
-nav.gnb li a{font-size:17px; color: #7A7A7A; line-height: 65px; display: block; }
+nav.gnb li a{font-size:17px; font-weight: bold;
+           color: #7A7A7A; line-height: 65px; display: block; }
 nav.gnb>li>a>img {height: 45px; }
 nav.gnb li:last-child{ padding-right: 0; padding-top: 10px; }        
 
