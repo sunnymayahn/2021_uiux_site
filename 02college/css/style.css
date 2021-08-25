@@ -205,7 +205,7 @@ nav.gnb li:last-child>a{ padding-left: 20px; padding-right: 0; padding-top: 10px
 .slider3>li>p{float:left;width: 550px;text-align: left; background:yellowgreen;}
 
 .btnWrap{float: right;cursor:pointer}
-.upBtn{position: absolute;;top: 0;right: 0;}
+.upBtn{position: absolute;top: 0;right: 0;}
 .downBtn{position: absolute; bottom: 0;right: 0;}
 
 
@@ -228,9 +228,3 @@ nav.gnb li:last-child>a{ padding-left: 20px; padding-right: 0; padding-top: 10px
 
 
 
- 
-/*  컬러박스사용
-    1st 컨트롤즈 모양 페이저색 
-    8th 페이저 위치변경 우상단 
-                경로지정 nth-child(8) .bx-pager{top right width값전체다차지하고있어조정}
-    모발버전테스트 */
