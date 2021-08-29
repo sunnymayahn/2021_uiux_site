@@ -12,6 +12,7 @@
     
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+
     <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
     
@@ -55,23 +56,27 @@
         <div class="hTopWp">       
            <div class="hTop w98"><!-- 980 플렉스쓸때는 clearfix 삭제-->
                 <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
-                <div class="search">검색</div>
                 
-                <div class="snsMenu">
-
-
+                <div class="searchWp">
+                   <form action="#" method="GET">
+                     <label for="search" class="searchTitle">검색</label>
+                     <input type="text" id="search"
+                            placeholder="검색어를 입력하세요." class="searchInp">
+                     <input type="submit" value="search" class="searchIcn">
+                   </form>
+                </div>
+               
+                <div class="snsMenu ">
+                    <!-- <span>+82 02 1234 5678</span> -->
                     <ul class="clearfix">
-                        <!-- <li>+82 02 1234 5678</li> -->
-                        <li><a href="#"><img src="images/sns1.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/sns2.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/sns3.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/sns4.png" alt=""></a></li>
+                        <li><a href="#">+82 02 1234 5678</a></li>
+                         <li><a href="#"><img src="images/sm11.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/sm2.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/sm3.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/sm4.png" alt=""></a></li>
                         
                     </ul>
-                    
-
-                </div>
-     
+                 </div>
             </div> 
         </div>
 
@@ -89,17 +94,77 @@
                     </ul>
                 </nav>
             </div>
-      
-        
-
-
-    </header>
+        </header>
 
    
 
 
-<section class="contents w98">
-    <div class="container"></div>
+<section class="contents mb20">
+    <div class="main w98"> 
+        <div class="mainTop clearfix mb15">
+
+           <div class="mtLeft"> 
+               <div class="formWp mb15">
+                    
+                   <div class="formMenu">
+                       <ul>
+                           <li class="clearfix"><a href="#">
+                               <img src="images/iconfm01.png" alt="">
+                               <p>공항예약</p>  </a></li>
+                           <li class="clearfix"><a href="#">
+                               <img src="images/iconfm02.png" alt="">
+                               <p>호텔예약</p>  </a></li>
+                           <li class="clearfix"><a href="#">
+                               <img src="images/iconfm03.png" alt="">
+                               <p>렌트카</p>  </a></li>
+                           <li class="clearfix"><a href="#">
+                               <img src="images/iconfm04.png" alt="">
+                               <p>휴양지</p>  </a></li>
+                          
+                       </ul>
+                   </div>
+
+                    <form action="welcome.php" method="get">
+                    </form>
+
+               </div>
+
+               <div class="main1">
+                 <ul class="clearfix">
+                    <li><a href=""><img src="images/tour101.png" alt="#"></a> </li>
+                    <li><a href=""><img src="images/tour102.png" alt="#"></a> </li>
+                    
+                 </ul>
+               </div>
+           
+            </div>
+
+            <div class="mainTxt">
+                <h1 class="mb20">TRAVEL GO</h1>
+                <p>지금,여행이 떠나고 싶다면?<br>
+                하이미디어와 여행을 떠나자!</p>
+            </div>
+
+        </div>
+
+
+        <div class="main2 mb15" >
+            <ul class="clearfix">
+                <li><a href=""><img src="images/tour201.png" alt="#"></a> </li>
+                <li><a href=""><img src="images/tour202.png" alt="#"></a> </li>
+                <li><a href=""><img src="images/tour203.png" alt="#"></a> </li>
+                <li><a href=""><img src="images/tour204.png" alt="#"></a> </li>
+           </ul>
+        </div>
+        <div class="main3 mb15">
+            <ul class="clearfix">
+                <li><a href=""><img src="images/tour301.png" alt="#"></a> </li>
+                <li><a href=""><img src="images/tour302.png" alt="#"></a> </li>
+                <li><a href=""><img src="images/tour303.png" alt="#"></a> </li>
+                <li><a href=""><img src="images/tour304.png" alt="#"></a> </li>
+         </ul>
+        </div>
+    </div>
 
 
     
@@ -124,7 +189,7 @@
 
 <footer id="footer ">
     <div class="fWp w98">
-    <div class="fMenu ">
+    <div class="fMenu mb15">
             <ul class="clearfix">
                 <li><a href="#">이용약관</a></li>
                 <li><a href="#">개인정보취급방침</a></li>
@@ -141,8 +206,11 @@
     
     </div>
 </footer>  
+<br><br>
 
-
+<form action="welcome.php" method="get">
+    dfl
+</form>
 
 </body>
 </html>

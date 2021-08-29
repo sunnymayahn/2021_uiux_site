@@ -1,30 +1,59 @@
 @charset "utf-8";
 body{
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 14px;
-}
-/* header */
+    font-size: 14px; letter-spacing: -0.5px;
+    }
+
+
 .w98{width: 980px;margin: 0 auto;}
 .mb10{margin-bottom: 10px;}
 .mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
 .mr20{margin-right: 20px;}
 
+/* header */
 
 
 .hTopWp{background: #0763a2 url(../images/topbg01.jpg) no-repeat center ;}
 .hTop{ position: relative;height: 90px;}
 
-.hTop{display: flex; justify-content:space-between;align-items: center;
-}
-h1{width: 160px;height: 50px; }
-.search{width: 300px;height: 35px; border-radius: 17px; background: white;
- display:flex;justify-content: center;align-items: center; } */
+.hTop{display: flex; justify-content:space-between;align-items: center;}
 
-.snsMenu{width: 125px;height: 30px; background: white;}
-.snsMenu>ul>li{ float: left; width: calc( 100% / 4 ) ;}
+.hTop h1{width: 160px;height: 50px; }
+
+/* .search{width: 100px;height: 35px; border-radius: 17px; background: white;
+ display:flex;justify-content: center;align-items: center; }  */
+ 
+    .searchWp{position: relative;  }
+        .searchInp{width: 300px;height: 35px; border-radius: 17px;
+            text-indent: 90px; border: 1px solid white;           }
+                        
+        .searchTitle{
+        display: block;position: absolute;
+        width: 60px;height: 20px;
+        background: url(../images/searchtext.jpg);
+        text-indent: -9999px;
+        top: 50%;  transform:translateY(-50%) ; 
+                  left: 20px;    }
+        .searchIcn{
+        position: absolute;right: 10px;
+        top: 50%; transform:translateY(-50%) ;
+        width: 30px;height: 30px;
+        border: 1px solid white;
+       text-indent: -9999px;
+        background: url(../images/searchicon.jpg) no-repeat center;}
+          
+       input[type="text"]:focus{outline: none;}
+   
+
+.snsMenu {width: 310px;height: 30px; }
+/* .snsMenu span{float: left;width: 220px;} */
+.snsMenu>ul>li{ float: left; width: calc( 160px / 5 ) ;}
+.snsMenu>ul>li:first-child{width: 180px; background-color: orange;text-align: center;}
+.snsMenu>ul>li:first-child>a{line-height: 30px; font-size: 18px; font-weight: bold; color: white;}
 
 .gnbWp{border-bottom: 5px solid #0E73A7}
-.gnb li{float: left; width: calc( 100%/ 6 ) ;height: 66px;line-height: 66px;
+.gnb li{float: left; width: calc( 100%/ 6 ) ;height: 60px;line-height: 66px;
     ; border-left: 2px solid #eee;  }
      
 .gnb li:last-child{border-right: 2px solid #eee;}
@@ -33,38 +62,67 @@ h1{width: 160px;height: 50px; }
 .gnb li>a:hover{background-color: purple;color: white; }  
 
 
+.contents{background : url(../images/bgsky.jpg); no-repeat center;
+    background-size: cover; padding-top: 66px;
+   }
+    /* height: 100vh} */
+ .main{height: 1080px; ;}
+
+ .main div{background-color: beige }
+ 
+ .mainTop{height: 555px;  } 
+ 
+ 
+ 
+ 
+ /* 
+ 폼양식
+ 지앤비 메뉴 빨강
+ 풍선배경 풍선애니 비행기애니 */
+
+/*  
+.mainTxt{float: right;width: 480px;padding: 20px;color: #14252D}
+.mainTxt>h1{font-size: 65px;font-family: Arial; font weight: bold;}
+.mainTxt>p{font-size: 25px;font-weight: bold;line-height: 30px;} */
 
 
 
 
- .container{height: 300px;}    
+
+ .mtLeft{float: left; width: 485px; }
+
+.formWp{width: 485px;height: 300px; background-color: white !important}
+.formMenu{width: 130px;height: 300px; }
+.formMenu li{height: 75px;background-color: navy;line-height: 30px;padding: 22px;}
+            /* display: flex;justify-content: center;align-items: center;} */
+.formMenu li>a{color: white;}
+.formMenu img{float: left;width: 27px;margin-right: 5px;}
+.formMenu li>p{float: left;background: yellow;}
+
+ .main1 li{float: left; width: 235px;margin-right: 15px;}
+
+
+
+
+
+
+ /* .main1,.main2,.main3{height: 240px;}   */
+ .main2 li, .main3 li {float: left; width: calc((100% - 45px) / 4); margin-right: 15px;} 
+ .main1 li:last-child,.main2 li:last-child,.main3 li:last-child 
+               {margin-right: 0;}
+
 
 /* contents     */
-/* .bx-wrapper {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0 none;
-    margin-bottom: 0;}
+/* .bx-wrapper { -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;border: 0 none;
+                margin-bottom: 0;}
 .bx-wrapper .bx-pager{ bottom: 30px;}
 .bx-wrapper .bx-pager.bx-default-pager a.active{background: blue;} */
-    
         
 /* 
 
-.contents{
-   height: 1300px;   
-   min-width: 1200px;
-    background-color: gray;
-    background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
-     
-    background-repeat: repeat,no-repeat ;
-    background-position: center;
-    background-size:auto,cover;
-    padding-top: 75px;
-    }
-
-    .contents .title
+/*    .contents .title
     .titleTxt
              
     .container
@@ -79,13 +137,13 @@ h1{width: 160px;height: 50px; }
 
 
 
-.fMenu>ul>li{float: left;margin-bottom: 20px;}
-.fMenu>ul>li>a{display: block;text-align: center;;line-height: 14px;
-    padding: 0 15px; border-right: 1px solid gray ;color: #666;
+.fMenu>ul>li{float: left;}
+.fMenu>ul>li>a{display: block;text-align: center;line-height: 14px;
+    padding: 0 15px;  ;color: #444;
     font-weight: bold;}
 .fMenu>ul>li:first-child>a{padding-left: 0; text-align: left !important }
 .fMenu>ul>li:last-child>a{border-right: none;}
-.fMenu>ul>li>a:hover{background-color: purple;color: white; }  
+.fMenu>ul>li>a:hover{color: navy }  
 .info{color: gray;font-size: 13px;line-height: 18px;}
 .info p {margin-bottom: 5px;}
 
