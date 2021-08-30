@@ -74,13 +74,7 @@ body{
  /* .mainTop{height: 555px; background: url(../images/bgbal.png) no-repeat ;background-position:right bottom ;  }  */
  
  
- 
- 
- /* 
- 폼양식  지앤비 메뉴 빨강
- 풍선배경 풍선애니 비행기애니 */
-
- 
+  
 .mainTxt{float: right;width: 480px;padding: 20px;color: #14252D}
 .mainTxt>h1{font-size: 65px; letter-spacing: -2px;
             position: relative;}
@@ -93,12 +87,15 @@ body{
 
 
 
-.mtLeft{float: left; width: 485px; }
+/* .mtLeft{float: left; width: 485px; }
+.sliderWrap{width: 485px;height: 300px; background-color: pink !important} */
+
+/*------------ .formMenu-------- */
 
 .formWp{width: 485px;height: 300px; background-color: pink !important}
 .formMenu{width: 150px;height: 300px;float: left; }
 .formMenu li{height: 75px;background-color: #00497C;line-height: 30px;padding: 22px;}
-            /* display: flex;justify-content: center;align-items: center;} */
+           
 .formMenu li>a{color: white;display: block;}
 .formMenu li:hover{background-color: white;}
 .formMenu li>a:hover{color: #444;}
@@ -106,15 +103,48 @@ body{
 .formMenu img{float: left;width: 27px;margin-right: 5px;}
 .formMenu li>p{float: left;}
 
+.formWp .form {width: 330px;height: 300px;float: left; padding: 25px; }
+
+/*------------ .formMenu-------- */
+
+
+.mtLeft{float: left; width: 485px; }
+
+.sliderWrap{width: 485px;height: 900px; position: relative; background-color:yellowgreen }
+
+.bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;    box-shadow: none;border: 0 none;    margin-bottom: 0;}
+
+.bx-wrapper{width: 350px;}
+.sliderPager {width: 150px; } 
+
+.sliderPager.bxPager {position: absolute;top: 0;width: 150px;height: 300px}
+
+/* .sliderPager .bxPager{width: 150px;height: 300px; } */
+
+.bxPager a{ display: block;
+                    width: 150px; height: 75px; 
+                    background-color: #00497C; color: white;
+                   display: flex;justify-content: center; align-items: center;  
+                    }
+
+  
+ .sliderPager .bxPager a.active{background-color: skyblue; color: #777;}
+ .sliderPager .bxPager a:hover{background-color: purple;}
+
+ .sliderPager .bxPager img{width: 27px;margin-right: 5px;}
+ /* .sliderPager .bxPager li>p{float: left;}  */
+
+
+/* ***************** ul.slider 위치 패딩적용이 안됨 */
+ul.slider {width: 330px;height: 300px; position: absolute;right: 0; padding: 25px; }
 
 
 
-
-.slider {width: 330px;height: 300px;float: left; padding: 25px; }
 fieldset{border: 0;}
-.blind{display: block;position: absolute;left: 0;top: -999px;}
-.form{width: 280px;margin: 0 auto; 
-    height: 300px;}
+.blind{display: block;position: absolute;left: 0;top: -9999px;}
+
+
+.slider .form{width: 280px;margin: 0 auto;  height: 300px;}
  
 
 .form label{display: block;padding: 5px 0; font-weight: bold; color: #444;}
@@ -153,13 +183,8 @@ fieldset{border: 0;}
 .main li:last-child{margin-right: 0;}
 
 
-/* contents     */
-/* .bx-wrapper { -moz-box-shadow: none;
-                -webkit-box-shadow: none;
-                box-shadow: none;border: 0 none;
-                margin-bottom: 0;}
-.bx-wrapper .bx-pager{ bottom: 30px;}
-.bx-wrapper .bx-pager.bx-default-pager a.active{background: blue;} */
+
+
         
 /* 
 
