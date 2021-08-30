@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px; letter-spacing: -0.5px;
     }
 
@@ -49,12 +49,12 @@ body{
 .snsMenu {width: 310px;height: 30px; }
 /* .snsMenu span{float: left;width: 220px;} */
 .snsMenu>ul>li{ float: left; width: calc( 160px / 5 ) ;}
-.snsMenu>ul>li:first-child{width: 180px; background-color: orange;text-align: center;}
-.snsMenu>ul>li:first-child>a{line-height: 30px; font-size: 18px; font-weight: bold; color: white;}
+.snsMenu>ul>li:first-child{width: 170px; background-color: orange;text-align: center;}
+.snsMenu>ul>li:first-child>a{line-height: 30px; font-size: 18px; color: white;}
 
 .gnbWp{border-bottom: 5px solid #0E73A7}
 .gnb li{float: left; width: calc( 100%/ 6 ) ;height: 60px;line-height: 66px;
-    ; border-left: 2px solid #eee;  }
+        border-left: 2px solid #eee;  }
      
 .gnb li:last-child{border-right: 2px solid #eee;}
 .gnb li>a{font-size: 16px;font-weight: bold;color: #1A2B34;
@@ -70,28 +70,31 @@ body{
 
  .main div{background-color: beige }
  
- .mainTop{height: 555px;  } 
+ /* .mainTop{height: 555px; background: url(../images/bgbal.png) no-repeat ;background-position:right bottom ;  }  */
  
  
  
  
  /* 
- 폼양식
- 지앤비 메뉴 빨강
+ 폼양식  지앤비 메뉴 빨강
  풍선배경 풍선애니 비행기애니 */
 
-/*  
+ 
 .mainTxt{float: right;width: 480px;padding: 20px;color: #14252D}
-.mainTxt>h1{font-size: 65px;font-family: Arial; font weight: bold;}
-.mainTxt>p{font-size: 25px;font-weight: bold;line-height: 30px;} */
+.mainTxt>h1{font-size: 65px; letter-spacing: -2px;
+            position: relative;}
+.mainTxt>h1:after{width: 80px;height: 5px;background-color: #14252D;
+                    position: absolute;top: 70px;right: 118px;
+                content: "";display: block;}
+.mainTxt>p{font-size: 25px;font-weight: bold;line-height: 30px;}
+.mainTxt span {font-style: italic;}
 
 
 
 
+.mtLeft{float: left; width: 485px; }
 
- .mtLeft{float: left; width: 485px; }
-
-.formWp{width: 485px;height: 300px; background-color: white !important}
+.formWp{width: 485px;height: 300px; background-color: pink !important}
 .formMenu{width: 130px;height: 300px; }
 .formMenu li{height: 75px;background-color: navy;line-height: 30px;padding: 22px;}
             /* display: flex;justify-content: center;align-items: center;} */
@@ -107,9 +110,10 @@ body{
 
 
  /* .main1,.main2,.main3{height: 240px;}   */
- .main2 li, .main3 li {float: left; width: calc((100% - 45px) / 4); margin-right: 15px;} 
- .main1 li:last-child,.main2 li:last-child,.main3 li:last-child 
-               {margin-right: 0;}
+ .main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); margin-right: 15px;} 
+ /* .main1 li:last-child,.main2 li:last-child,.main3 li:last-child 
+               {margin-right: 0;} */
+.main li:last-child{margin-right: 0;}
 
 
 /* contents     */

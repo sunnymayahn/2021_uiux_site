@@ -59,7 +59,7 @@ nav.gnb li:last-child>a{ padding-left: 20px; padding-right: 0; padding-top: 10px
 
 
 .contents{
-   height: 1300px;    /* 나중에 삭제 */
+   /* height: 1300px;    나중에 삭제 */
    min-width: 1200px;
     background-color: gray;
     background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
