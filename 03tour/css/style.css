@@ -2,7 +2,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px; letter-spacing: -0.5px;
-    }
+    overflow-x: hidden;
+   }
 
 
 .w98{width: 980px;margin: 0 auto;}
@@ -69,13 +70,13 @@ body{
     /* height: 100vh} */
  .main{height: 1080px; ;}
 
- .main div{background-color: beige }
+ /* .main div{background-color: beige } */
  
  /* .mainTop{height: 555px; background: url(../images/bgbal.png) no-repeat ;background-position:right bottom ;  }  */
  
  
   
-.mainTxt{float: right;width: 480px;padding: 20px;color: #14252D}
+.mainTxt{float: right;width: 480px;padding: 20px;color: #14252D ; por}
 .mainTxt>h1{font-size: 65px; letter-spacing: -2px;
             position: relative;}
 .mainTxt>h1:after{width: 80px;height: 5px;background-color: #14252D;
@@ -84,6 +85,41 @@ body{
 .mainTxt>p{font-size: 25px;font-weight: bold;line-height: 30px;}
 .mainTxt span {font-style: italic;}
 
+
+/* balloon */
+mainTop {position: relative;  
+        /* z-index: 1; */
+        }
+
+.bgbal{position: absolute;top: 250px;right: 10px;height: 600px;
+    animation-name: bgbal;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;}
+     
+  @keyframes bgbal{ to{top: 280px;}}
+     
+                 
+.air{ position: absolute;bottom:-200px;left:-200px;
+        animation-name: air;
+        animation-duration: 20s; animation-fill-mode: forwards;
+        animation-iteration-count: infinite; animation-timing-function: linear;
+        
+        }
+  @keyframes air{
+            from{transform: scale(0.2);}
+            to{bottom: 1500px;left: 2800px;transform: scale(2)} }
+
+
+.air3{ position: absolute;bottom: -200px;right: 50px;
+    animation-name: air3;
+    animation-duration: 20s; animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+        }
+@keyframes air3{ 
+    to{bottom: 300px;right: 2000px;} }
 
 
 
@@ -108,18 +144,23 @@ body{
 /*------------ .formMenu-------- */
 
 
-.mtLeft{float: left; width: 485px; }
+.mtLeft{float: left; width: 485px; z-index: 1; }
 
 .sliderWrap{width: 485px;height: 900px; position: relative; background-color:yellowgreen }
 
 .bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;    box-shadow: none;border: 0 none;    margin-bottom: 0;}
 
-.bx-wrapper{width: 350px;}
-.sliderPager {width: 150px; } 
 
+/* ???? 랩퍼 페이저사이즈 확인하기********************** */
+
+        /* .bx-wrapper{width: 350px;background-color: aqua;} */
+.bx-wrapper{width: 485px;background-color: aqua;}
+
+
+        /* .sliderPager {width: 150px; }  */
 .sliderPager.bxPager {position: absolute;top: 0;width: 150px;height: 300px}
+/* ??? 사이스페이스주면 메뉴탭사라짐 .sliderPager.bxPager 경로명 확인하기 */
 
-/* .sliderPager .bxPager{width: 150px;height: 300px; } */
 
 .bxPager a{ display: block;
                     width: 150px; height: 75px; 
@@ -132,11 +173,14 @@ body{
  .sliderPager .bxPager a:hover{background-color: purple;}
 
  .sliderPager .bxPager img{width: 27px;margin-right: 5px;}
- /* .sliderPager .bxPager li>p{float: left;}  */
 
 
-/* ***************** ul.slider 위치 패딩적용이 안됨 */
-ul.slider {width: 330px;height: 300px; position: absolute;right: 0; padding: 25px; }
+
+/* ***************** ul.slider 사이즈값?? 위치 패딩적용이 안됨 */
+/* ul.slider {width: 485px;height: 300px; position: relative; padding: 25px; }
+.slider .form{width: 280px;margin: 0 auto;  height: 300px;position: absolute;right: 0;} */
+ul.slider {width: 485px;height: 300px; position: absolute;right: 0; padding: 25px; }
+.slider .form{width: 280px;margin: 0 auto;  height: 300px; margin-top: 20px;}
 
 
 
@@ -144,7 +188,6 @@ fieldset{border: 0;}
 .blind{display: block;position: absolute;left: 0;top: -9999px;}
 
 
-.slider .form{width: 280px;margin: 0 auto;  height: 300px;}
  
 
 .form label{display: block;padding: 5px 0; font-weight: bold; color: #444;}
@@ -177,7 +220,9 @@ fieldset{border: 0;}
 
 
  /* .main1,.main2,.main3{height: 240px;}   */
- .main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); margin-right: 15px;} 
+ .main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); 
+                    height: 240px; margin-right: 15px;
+                        } 
  /* .main1 li:last-child,.main2 li:last-child,.main3 li:last-child 
                {margin-right: 0;} */
 .main li:last-child{margin-right: 0;}
@@ -185,8 +230,15 @@ fieldset{border: 0;}
 
 
 
+.main3>ul>li:nth-child(1){background: url(../images/tour401.png);}
+.main3>ul>li:nth-child(2){background: url(../images/tour302.png)}
+.main3>ul>li:nth-child(3){background: url(../images/tour303.png)}
+.main3>ul>li:nth-child(4){background: url(../images/tour404.png)}
+
+.main3>ul>li{padding: 20px;} 
+.main3>ul>li>a{color: white;} 
         
-/* 
+
 
 /*    .contents .title
     .titleTxt
