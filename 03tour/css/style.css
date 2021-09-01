@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px; letter-spacing: -0.5px;
     overflow-x: hidden;
+    /* z-index: 1 */
    }
 
 
@@ -65,16 +66,15 @@ body{
 
 
 .contents{background : url(../images/bgsky.jpg); no-repeat center;
-    background-size: cover; padding-top: 66px;
+    background-size: cover; padding-top: 66px; 
+    z-index:1
    }
     /* height: 100vh} */
- .main{height: 1080px; ;}
+ .main{height: 1080px;  z-index: 1 }
 
  /* .main div{background-color: beige } */
  
- /* .mainTop{height: 555px; background: url(../images/bgbal.png) no-repeat ;background-position:right bottom ;  }  */
- 
- 
+
   
 .mainTxt{float: right;width: 480px;padding: 20px;color: #14252D ; por}
 .mainTxt>h1{font-size: 65px; letter-spacing: -2px;
@@ -91,14 +91,16 @@ mainTop {position: relative;
         /* z-index: 1; */
         }
 
-.bgbal{position: absolute;top: 250px;right: 10px;height: 600px;
+.bgbal{position: absolute;top: 230px;right: 10px;height: 600px;
     animation-name: bgbal;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;}
      
-  @keyframes bgbal{ to{top: 280px;}}
+  @keyframes bgbal{ 
+                    to{top: 270px;}
+                   }
      
                  
 .air{ position: absolute;bottom:-200px;left:-200px;
@@ -109,7 +111,7 @@ mainTop {position: relative;
         }
   @keyframes air{
             from{transform: scale(0.2);}
-            to{bottom: 1500px;left: 2800px;transform: scale(2)} }
+            to{bottom: 1500px;left: 2000px;transform: scale(2)} }
 
 
 .air3{ position: absolute;bottom: -200px;right: 50px;
@@ -146,41 +148,27 @@ mainTop {position: relative;
 
 .mtLeft{float: left; width: 485px; z-index: 1; }
 
-.sliderWrap{width: 485px;height: 900px; position: relative; background-color:yellowgreen }
-
-.bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;    box-shadow: none;border: 0 none;    margin-bottom: 0;}
+.sliderWrap{width: 485px; position: relative; background-color:yellowgreen }
 
 
-/* ???? 랩퍼 페이저사이즈 확인하기********************** */
-
-        /* .bx-wrapper{width: 350px;background-color: aqua;} */
-.bx-wrapper{width: 485px;background-color: aqua;}
-
-
-        /* .sliderPager {width: 150px; }  */
-.sliderPager.bxPager {position: absolute;top: 0;width: 150px;height: 300px}
-/* ??? 사이스페이스주면 메뉴탭사라짐 .sliderPager.bxPager 경로명 확인하기 */
-
-
+.sliderPager{width: 150px;float: left;}
 .bxPager a{ display: block;
                     width: 150px; height: 75px; 
                     background-color: #00497C; color: white;
                    display: flex;justify-content: center; align-items: center;  
                     }
-
-  
  .sliderPager .bxPager a.active{background-color: skyblue; color: #777;}
  .sliderPager .bxPager a:hover{background-color: purple;}
-
  .sliderPager .bxPager img{width: 27px;margin-right: 5px;}
 
 
+.bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;
+            box-shadow: none;border: 0 none;    margin-bottom: 0;}
+.bx-wrapper {width: 335px;float: left;background-color:aqua;}
 
-/* ***************** ul.slider 사이즈값?? 위치 패딩적용이 안됨 */
-/* ul.slider {width: 485px;height: 300px; position: relative; padding: 25px; }
-.slider .form{width: 280px;margin: 0 auto;  height: 300px;position: absolute;right: 0;} */
-ul.slider {width: 485px;height: 300px; position: absolute;right: 0; padding: 25px; }
-.slider .form{width: 280px;margin: 0 auto;  height: 300px; margin-top: 20px;}
+
+.slider {width: 335px;height: 300px; position: absolute;right: 0; padding: 25px; }
+.slider .form{width: 280px;  height: 300px; margin-top: 30px;}
 
 
 
