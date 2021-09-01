@@ -65,11 +65,14 @@ body{
 .gnb li>a:hover{background-color: purple;color: white; }  
 
 
+
+/* .contents */
+
 .contents{background : url(../images/bgsky.jpg); no-repeat center;
     background-size: cover; padding-top: 66px; 
-    
-   }
     /* height: 100vh} */
+    }
+
  .main{height: 1080px; position: relative; z-index:1  }
 
  /* .main div{background-color: beige } */
@@ -88,11 +91,10 @@ body{
 
 
 /* balloon */
-mainTop {position: relative;   /* z-index: 1; */ }
-
-.bgbal{position: absolute;top: 30px;right: -100px;height: 600px;
+.bgbal{position: absolute;top: 10px;right: -100px;height: 600px;
     animation-name: bgbal;
-    animation-duration: 5s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;}
@@ -103,7 +105,7 @@ mainTop {position: relative;   /* z-index: 1; */ }
  
 .air{ position: absolute;bottom:-200px;left:-200px;
         animation-name: air;
-        animation-duration: 10s; animation-fill-mode: forwards;
+        animation-duration: 15s; animation-fill-mode: forwards;
         animation-iteration-count: infinite; animation-timing-function: linear;
                 }
   @keyframes air{
@@ -123,30 +125,34 @@ mainTop {position: relative;   /* z-index: 1; */ }
 
 
 
+/* booking form */
 
 .mtLeft{float: left; width: 485px;position: relative; z-index: 1; }
 .sliderWrap{width: 485px; background-color:yellowgreen }
 
- /* 예약 메뉴 */
+ /* booking menu_pager */
 .sliderPager{width: 150px;float: left;}
 .bxPager a{ display: block;
                     width: 150px; height: 75px; 
                     background-color: #00497C; color: white;
                    display: flex;justify-content: center; align-items: center;  
                     }
+.bxPager i{font-size: 17px;}
  .sliderPager .bxPager a.active{background-color:#0099CB ; }
  .sliderPager .bxPager a:hover{background-color: white; color:#444}
+ .sliderPager .bxPager a:hover i {color:#00497C; }
+
  
 
 
- /*  폼문서 */
+ /* booking form */
 .bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;
             box-shadow: none;border: 0 none;    margin-bottom: 0;}
 .bx-wrapper {width: 335px;height: 300px; float: left;background-color:white;
            padding-top: 20px;
         }
 
-/* .sliderSkin{width: 335px;height: 300px; float: left;  } */
+               /* .sliderSkin{width: 335px;height: 300px; float: left;  } */
 .slider{ padding: 25px 25px 0; float: left; }
 .form{width: 280px;  height: 300px; margin-top: 30px;}
 
@@ -176,23 +182,37 @@ fieldset{border: 0;}
 
   
  
- 
+ /* main1 .slider 2세트  **************************************************/
+
 .main1 li{float: left; width: 235px;margin-right: 15px;}
 
+
+
+
+
 .main2 { position: relative; z-index: 1;}
+                  /* 메인탑에있는 풍선이 메인2에도 걸려서 움직임 */
 .main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); 
                     height: 240px; margin-right: 15px;
                         } 
 .main li:last-child{margin-right: 0;}
 
+.main2 .box{width: 235px;height: 65px;position: absolute;bottom: 0;
+    color: white;padding: 15px 20px;}
+.main2 li:nth-child(1) .box{background: #529351 }
+.main2 li:nth-child(2) .box{background: #152630  }
+.main2 li:nth-child(3) .box{background: #152630 ;opacity: 0.7; }
+.main2 li:nth-child(4) .box{background: #44619D}
+ 
+.main2 i{color:gold;}
+.main2 i:last-child{color:white;}
 
-/* .main3>ul>li:nth-child(1){background: url(../images/tour401.png);}
-.main3>ul>li:nth-child(2){background: url(../images/tour302.png)}
-.main3>ul>li:nth-child(3){background: url(../images/tour303.png)}
-.main3>ul>li:nth-child(4){background: url(../images/tour404.png)} */
 
-.main3>ul>li{float: left; position: relative;} 
 
+
+
+
+.main3 li{float: left; position: relative;} 
 
 .main3 .txt{position: absolute;top: 20px;left: 30px;
     text-align: center; color: white} 
@@ -217,8 +237,11 @@ fieldset{border: 0;}
 
 .circle .bar1{transform:translate(-50%,-50%) rotate(90deg)}
 
-.main3>ul>li:hover .circle{ transform:translate(-50%,-50%) rotate(180deg)} 
-.main3>ul>li:hover .txt{transform: translateY(130px); }  
+.main3 li:hover { box-shadow:0 15px 15px lightseagreen;}
+                    /* transform:scale(1.1)}*/
+                
+.main3 li:hover .circle{ transform:translate(-50%,-50%) rotate(180deg)} 
+.main3 li:hover .txt{transform: translateY(130px); }  
 
 
 
