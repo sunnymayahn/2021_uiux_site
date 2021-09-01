@@ -67,16 +67,17 @@ body{
 
 .contents{background : url(../images/bgsky.jpg); no-repeat center;
     background-size: cover; padding-top: 66px; 
-    z-index:1
+    
    }
     /* height: 100vh} */
- .main{height: 1080px;  z-index: 1 }
+ .main{height: 1080px; position: relative; z-index:1  }
 
  /* .main div{background-color: beige } */
  
 
-  
-.mainTxt{float: right;width: 480px;padding: 20px;color: #14252D ; por}
+.mainTop{position: relative;  z-index: 1}
+
+.mainTxt{float: right;width: 480px;padding: 20px;color: #14252D ;position: relative; z-index:1 }
 .mainTxt>h1{font-size: 65px; letter-spacing: -2px;
             position: relative;}
 .mainTxt>h1:after{width: 80px;height: 5px;background-color: #14252D;
@@ -87,96 +88,71 @@ body{
 
 
 /* balloon */
-mainTop {position: relative;  
-        /* z-index: 1; */
-        }
+mainTop {position: relative;   /* z-index: 1; */ }
 
-.bgbal{position: absolute;top: 230px;right: 10px;height: 600px;
+.bgbal{position: absolute;top: 30px;right: -100px;height: 600px;
     animation-name: bgbal;
-    animation-duration: 7s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;}
      
   @keyframes bgbal{ 
-                    to{top: 270px;}
+                    to{top: 100px;}
                    }
-     
-                 
+ 
 .air{ position: absolute;bottom:-200px;left:-200px;
         animation-name: air;
-        animation-duration: 20s; animation-fill-mode: forwards;
+        animation-duration: 10s; animation-fill-mode: forwards;
         animation-iteration-count: infinite; animation-timing-function: linear;
-        
-        }
+                }
   @keyframes air{
-            from{transform: scale(0.2);}
-            to{bottom: 1500px;left: 2000px;transform: scale(2)} }
+            from{transform: scale(0.5);}
+            to{bottom: 1400px;left: 2000px;transform: scale(1.5)} }
 
 
 .air3{ position: absolute;bottom: -200px;right: 50px;
     animation-name: air3;
-    animation-duration: 20s; animation-fill-mode: forwards;
+    animation-duration: 15s; animation-fill-mode: forwards;
     animation-iteration-count: infinite; 
     animation-timing-function: linear;
         }
 @keyframes air3{ 
-    to{bottom: 300px;right: 2000px;} }
+    to{bottom: 200px;right: 2000px;} }
 
 
 
-/* .mtLeft{float: left; width: 485px; }
-.sliderWrap{width: 485px;height: 300px; background-color: pink !important} */
-
-/*------------ .formMenu-------- */
-
-.formWp{width: 485px;height: 300px; background-color: pink !important}
-.formMenu{width: 150px;height: 300px;float: left; }
-.formMenu li{height: 75px;background-color: #00497C;line-height: 30px;padding: 22px;}
-           
-.formMenu li>a{color: white;display: block;}
-.formMenu li:hover{background-color: white;}
-.formMenu li>a:hover{color: #444;}
-
-.formMenu img{float: left;width: 27px;margin-right: 5px;}
-.formMenu li>p{float: left;}
-
-.formWp .form {width: 330px;height: 300px;float: left; padding: 25px; }
-
-/*------------ .formMenu-------- */
 
 
-.mtLeft{float: left; width: 485px; z-index: 1; }
+.mtLeft{float: left; width: 485px;position: relative; z-index: 1; }
+.sliderWrap{width: 485px; background-color:yellowgreen }
 
-.sliderWrap{width: 485px; position: relative; background-color:yellowgreen }
-
-
+ /* 예약 메뉴 */
 .sliderPager{width: 150px;float: left;}
 .bxPager a{ display: block;
                     width: 150px; height: 75px; 
                     background-color: #00497C; color: white;
                    display: flex;justify-content: center; align-items: center;  
                     }
- .sliderPager .bxPager a.active{background-color: skyblue; color: #777;}
- .sliderPager .bxPager a:hover{background-color: purple;}
- .sliderPager .bxPager img{width: 27px;margin-right: 5px;}
+ .sliderPager .bxPager a.active{background-color:#0099CB ; }
+ .sliderPager .bxPager a:hover{background-color: white; color:#444}
+ 
 
 
+ /*  폼문서 */
 .bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;
             box-shadow: none;border: 0 none;    margin-bottom: 0;}
-.bx-wrapper {width: 335px;float: left;background-color:aqua;}
+.bx-wrapper {width: 335px;height: 300px; float: left;background-color:white;
+           padding-top: 20px;
+        }
 
-
-.slider {width: 335px;height: 300px; position: absolute;right: 0; padding: 25px; }
-.slider .form{width: 280px;  height: 300px; margin-top: 30px;}
-
-
+/* .sliderSkin{width: 335px;height: 300px; float: left;  } */
+.slider{ padding: 25px 25px 0; float: left; }
+.form{width: 280px;  height: 300px; margin-top: 30px;}
 
 fieldset{border: 0;}
 .blind{display: block;position: absolute;left: 0;top: -9999px;}
 
-
- 
 
 .form label{display: block;padding: 5px 0; font-weight: bold; color: #444;}
 .form select{width: 100%;height: 35px; font-size: 1em;color: #777;
@@ -198,48 +174,58 @@ fieldset{border: 0;}
             background: url(../images/btnSubmit.png ) no-repeat center; 
             border: 0; cursor: pointer;  }
 
-
   
  
+ 
+.main1 li{float: left; width: 235px;margin-right: 15px;}
 
- .main1 li{float: left; width: 235px;margin-right: 15px;}
-
-
-
-
- /* .main1,.main2,.main3{height: 240px;}   */
- .main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); 
+.main2 { position: relative; z-index: 1;}
+.main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); 
                     height: 240px; margin-right: 15px;
                         } 
- /* .main1 li:last-child,.main2 li:last-child,.main3 li:last-child 
-               {margin-right: 0;} */
 .main li:last-child{margin-right: 0;}
 
 
-
-
-.main3>ul>li:nth-child(1){background: url(../images/tour401.png);}
+/* .main3>ul>li:nth-child(1){background: url(../images/tour401.png);}
 .main3>ul>li:nth-child(2){background: url(../images/tour302.png)}
 .main3>ul>li:nth-child(3){background: url(../images/tour303.png)}
-.main3>ul>li:nth-child(4){background: url(../images/tour404.png)}
+.main3>ul>li:nth-child(4){background: url(../images/tour404.png)} */
 
-.main3>ul>li{padding: 20px;} 
-.main3>ul>li>a{color: white;} 
-        
+.main3>ul>li{float: left; position: relative;} 
 
 
-/*    .contents .title
-    .titleTxt
-             
-    .container
-    .container>ul>li{float: left;width: 25%;height: 240px;}
-        .sliderTxt{position: absolute;top: 60px;left: 80px; }
-        .sliderTxt p{font-size: 50px;line-height: 60px; margin-bottom: 20px; color:#1651B7 }
-    
-    .container>ul>li:nth-child(8) .bx-pager{top: 30px; right: 20px;width: 150px;}
-    .container>ul>li:nth-child(8) .bx-pager.bx-default-pager a.active{background: #DE2120;}
+.main3 .txt{position: absolute;top: 20px;left: 30px;
+    text-align: center; color: white} 
+.main3 h2 {font-size: 18px;font-weight: bold;}
+.main3 .bg{width: 100%;height: 100%; position: absolute;top: 0;
+            background: rgb(29, 29, 51);
+            opacity:0 ;transition:0.3s }  
+         
+ .main3 li:hover .bg{opacity:0.8}  
+                          
+ .main3 .circle{position: absolute;
+    width: 35px;height: 35px; 
+    left:50%;top:50%;transform:translate(-50%,-50%);
+    transition:0.3s;border: 3px solid #fff;
+    border-radius:50%}
 
-    */
+.circle .bar1,
+.circle .bar2{
+        width: 22px;height: 3px;background: #fff;position: absolute;
+        border-radius:2px;left: 50%;top: 50%;
+        transform:translate(-50%,-50%)}
+
+.circle .bar1{transform:translate(-50%,-50%) rotate(90deg)}
+
+.main3>ul>li:hover .circle{ transform:translate(-50%,-50%) rotate(180deg)} 
+.main3>ul>li:hover .txt{transform: translateY(130px); }  
+
+
+
+
+
+
+
 
 
 
