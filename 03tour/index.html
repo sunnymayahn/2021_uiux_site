@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
 
@@ -89,33 +91,261 @@
 <section class="contents mb20">
     <div class="main w98"> 
         <div class="mainTop clearfix mb15">
+            
+            <img src="images/bgbal.png" alt="" class="bgbal">
+           
+           
+            <div class="mtLeft"> 
 
-           <div class="mtLeft"> 
 
-               <div class="formWp mb15">
-                    
-                   <div class="formMenu">
-                       <ul>
-                           <li class="clearfix"><a href="#">
-                               <img src="images/iconfm01.png" alt="">
-                               <p>공항예약</p>  </a></li>
-                           <li class="clearfix"><a href="#">
-                               <img src="images/iconfm02.png" alt="">
-                               <p>호텔예약</p>  </a></li>
-                           <li class="clearfix"><a href="#">
-                               <img src="images/iconfm03.png" alt="">
-                               <p>렌트카</p>  </a></li>
-                           <li class="clearfix"><a href="#">
-                               <img src="images/iconfm041.png" alt="">
-                               <p>휴양지</p>  </a></li>
-                          
-                       </ul>
-                   </div>
 
-                    <form action="welcome.php" method="get">
-                    </form>
+                <div class="sliderWrap clearfix mb15">
+      
 
-               </div>
+                    <div class="sliderPager">   
+                        <div class="bxPager">
+                            <ul>
+                                <a href="#" data-slide-index="0">
+                                        <i class="fas fa-plane"></i>&nbsp&nbsp
+                                    <p>공항예약</p>  </a>
+                                <a href="#" data-slide-index="1">
+                                    <i class="fas fa-home"></i> 
+                                    &nbsp&nbsp   
+                                    <p>호텔예약</p>  </a>
+                                <a href="#" data-slide-index="2">
+                                    <i class="fas fa-car-alt"></i>&nbsp&nbsp
+                                    <p>렌트카</p>  </a>
+                                <a href="#" data-slide-index="3">
+                                    <i class="fas fa-life-ring "></i> 
+                                    &nbsp&nbsp
+                                    <p>휴양지</p>  </a>
+                            </ul>
+                        </div>
+                    </div>
+             
+            
+                 <div class="sliderSkin">
+                     <ul class="slider">
+                        <li>
+                            <form action="#" class="form" method="get">
+                                <fieldset>
+                                    <legend class="blind">여행일정</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
+                                            <select name="golo" id="golo" class="mb5">
+                                                <option value="">선택하세요</option>
+                                                <option value="미국">미국</option>
+                                                <option value="일본">일본</option>
+                                                <option value="중국">중국</option>
+                                            </select>
+                                        </li>
+                                        <li class="clearfix mb5">
+                                            <div class="left">
+                                                <label for="sdate">출발일</label>
+                                                <input type="date" id="sdate">
+                                            </div>
+                                            <div class="right">
+                                                <label for="edate">도착일</label>
+                                                <input type="date" id="edate">
+                                            </div>
+                                        </li>
+                                            <li class="clearfix mb20">
+                                                <div class="left">
+                                                    <label for="grade">좌석등급</label>
+                                                    <select name="grade" id="grade">
+                                                        <option value="">선택</option>
+                                                        <option value="비지니스">비지니스</option>
+                                                        <option value="이코노믹">이코노믹</option>
+                                                    </select>
+                                                </div>
+                                                <div class="right">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <label for="grade">성인</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                     
+                                                        <li>
+                                                            <label for="grade">아이</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                                                    </ul>
+                                                 </div>
+                                      </li>
+                                    </ul>
+                                </fieldset>
+                                <input type="submit" class="btnSubmit" value="검색">
+                            </form>
+                        </li>
+                        <li>
+                            <form action="#" class="form" method="get">
+                                <fieldset>
+                                    <legend class="blind">여행일정</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
+                                            <select name="golo" id="golo" class="mb5">
+                                                <option value="">선택하세요</option>
+                                                <option value="미국">미국</option>
+                                                <option value="일본">일본</option>
+                                                <option value="중국">중국</option>
+                                            </select>
+                                        </li>
+                                        <li class="clearfix mb5">
+                                            <div class="left">
+                                                <label for="sdate">출발일</label>
+                                                <input type="date" id="sdate">
+                                            </div>
+                                            <div class="right">
+                                                <label for="edate">도착일</label>
+                                                <input type="date" id="edate">
+                                            </div>
+                                        </li>
+                                            <li class="clearfix mb20">
+                                                <div class="left">
+                                                    <label for="grade">좌석등급</label>
+                                                    <select name="grade" id="grade">
+                                                        <option value="">선택</option>
+                                                        <option value="비지니스">비지니스</option>
+                                                        <option value="이코노믹">이코노믹</option>
+                                                    </select>
+                                                </div>
+                                                <div class="right">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <label for="grade">성인</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                     
+                                                        <li>
+                                                            <label for="grade">아이</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                                                    </ul>
+                                                 </div>
+                                      </li>
+                                    </ul>
+                                </fieldset>
+                                <input type="submit" class="btnSubmit" value="검색">
+                            </form>
+                        </li>
+                        <li>
+                            <form action="#" class="form" method="get">
+                                <fieldset>
+                                    <legend class="blind">여행일정</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
+                                            <select name="golo" id="golo" class="mb5">
+                                                <option value="">선택하세요</option>
+                                                <option value="미국">미국</option>
+                                                <option value="일본">일본</option>
+                                                <option value="중국">중국</option>
+                                            </select>
+                                        </li>
+                                        <li class="clearfix mb5">
+                                            <div class="left">
+                                                <label for="sdate">출발일</label>
+                                                <input type="date" id="sdate">
+                                            </div>
+                                            <div class="right">
+                                                <label for="edate">도착일</label>
+                                                <input type="date" id="edate">
+                                            </div>
+                                        </li>
+                                            <li class="clearfix mb20">
+                                                <div class="left">
+                                                    <label for="grade">좌석등급</label>
+                                                    <select name="grade" id="grade">
+                                                        <option value="">선택</option>
+                                                        <option value="비지니스">비지니스</option>
+                                                        <option value="이코노믹">이코노믹</option>
+                                                    </select>
+                                                </div>
+                                                <div class="right">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <label for="grade">성인</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                     
+                                                        <li>
+                                                            <label for="grade">아이</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                                                    </ul>
+                                                 </div>
+                                      </li>
+                                    </ul>
+                                </fieldset>
+                                <input type="submit" class="btnSubmit" value="검색">
+                            </form>
+                        </li>
+                     
+                        <li>
+                            <form action="#" class="form" method="get">
+                                <fieldset>
+                                    <legend class="blind">여행일정</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
+                                            <select name="golo" id="golo" class="mb5">
+                                                <option value="">선택하세요</option>
+                                                <option value="미국">미국</option>
+                                                <option value="일본">일본</option>
+                                                <option value="중국">중국</option>
+                                            </select>
+                                        </li>
+                                        <li class="clearfix mb5">
+                                            <div class="left">
+                                                <label for="sdate">출발일</label>
+                                                <input type="date" id="sdate">
+                                            </div>
+                                            <div class="right">
+                                                <label for="edate">도착일</label>
+                                                <input type="date" id="edate">
+                                            </div>
+                                        </li>
+                                            <li class="clearfix mb20">
+                                                <div class="left">
+                                                    <label for="grade">좌석등급</label>
+                                                    <select name="grade" id="grade">
+                                                        <option value="">선택</option>
+                                                        <option value="비지니스">비지니스</option>
+                                                        <option value="이코노믹">이코노믹</option>
+                                                    </select>
+                                                </div>
+                                                <div class="right">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <label for="grade">성인</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                     
+                                                        <li>
+                                                            <label for="grade">아이</label>
+                                                            <input type="number" id="num" placeholder="1" >
+                                                        </li>
+                                                    </ul>
+                                                 </div>
+                                      </li>
+                                    </ul>
+                                </fieldset>
+                                <input type="submit" class="btnSubmit" value="검색">
+                            </form>
+                        </li>
+                     
+                     
+                     
+                         </ul>
+                 </div>
+            
+            
+            </div>
+
+
+
 
                <div class="main1">
                  <ul class="clearfix">
@@ -131,8 +361,11 @@
                 <h1 class="mb20">TRAVEL GO</h1>
                 <p>지금, 여행이 떠나고 싶다면?<br>
                 하이미디어와 여행을 떠나자<span>!</span></p>
+
+                          
             </div>
 
+            
         </div>
 
 
@@ -146,10 +379,67 @@
         </div>
         <div class="main3 mb15">
             <ul class="clearfix">
-                <li><a href=""><img src="images/tour401.png" alt="#"></a> </li>
-                <li><a href=""><img src="images/tour302.png" alt="#"></a> </li>
-                <li><a href=""><img src="images/tour303.png" alt="#"></a> </li>
-                <li><a href=""><img src="images/tour404.png" alt="#"></a> </li>
+
+                <li><img src="images/tour401.png" alt="#">
+                    <div class="bg"></div>
+                    <div class="txt">
+                       <h2 class="mb5">
+                        <i class="fas fa-umbrella-beach"></i>
+                        &nbsp여행정보  </h2>
+                       <p>다양한 나라의 명소와 맛집등 <br>
+                          상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                      <div class="circle">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                      </div>
+                 </li>
+
+                 <li><img src="images/tour302.png" alt="#">
+                    <div class="bg"></div>
+                    <div class="txt">
+                       <h2 class="mb5">
+                        <i class="fas fa-utensils"></i>
+                        &nbsp맛집정보</h2>
+                       <p>다양한 나라의 명소와 맛집등 <br>
+                          상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                      <div class="circle">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                      </div>
+                 </li>
+
+                 <li><img src="images/tour303.png" alt="#">
+                    <div class="bg"></div>
+                    <div class="txt">
+                       <h2 class="mb5">
+                        <i class="fas fa-home"></i>
+                        &nbsp숙박정보  </h2>
+                       <p>다양한 나라의 명소와 맛집등 <br>
+                          상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                      <div class="circle">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                      </div>
+                 </li>
+
+                 <li><img src="images/tour404.png" alt="#">
+                    <div class="bg"></div>
+                    <div class="txt">
+                       <h2 class="mb5">
+                        <i class="far fa-thumbs-up "></i>
+                        &nbsp여행자후기 </h2>
+                       <p>다양한 나라의 명소와 맛집등 <br>
+                          상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                      <div class="circle">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                      </div>
+                 </li>
+                        
          </ul>
         </div>
     </div>
@@ -191,359 +481,10 @@
     
     </div>
 </footer>  
+<img src="images/air1.png" alt="#" class="air">
+<img src="images/air3.png" alt="#" class="air3">
+
 <br><br>
-
-<!-- ------폼문서 1세트 시작---------- -->
-
-
-<div class="formWp clearfix mb15">
-                    
-    <div class="formMenu">
-        <ul>
-            <li class="clearfix"><a href="#">
-                <img src="images/iconfm01.png" alt="">
-                <p>공항예약</p>  </a></li>
-            <li class="clearfix"><a href="#">
-                <img src="images/iconfm02.png" alt="">
-                <p>호텔예약</p>  </a></li>
-            <li class="clearfix"><a href="#">
-                <img src="images/iconfm03.png" alt="">
-                <p>렌트카</p>  </a></li>
-            <li class="clearfix"><a href="#">
-                <img src="images/iconfm041.png" alt="">
-                <p>휴양지</p>  </a></li>
-           
-        </ul>
-    </div>
-
-
-
-            <form action="#" class="form" method="get">
-                <fieldset>
-                    <legend class="blind">여행일정</legend>
-                    <ul>
-                        <li>
-                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
-                            <select name="golo" id="golo" class="mb5">
-                                <option value="">선택하세요</option>
-                                <option value="미국">미국</option>
-                                <option value="일본">일본</option>
-                                <option value="중국">중국</option>
-                            </select>
-                        </li>
-                        <li class="clearfix mb5">
-                            <div class="left">
-                                <label for="sdate">출발일</label>
-                                <input type="date" id="sdate">
-                            </div>
-                            <div class="right">
-                                <label for="edate">도착일</label>
-                                <input type="date" id="edate">
-                            </div>
-                        </li>
-    
-                            <li class="clearfix mb20">
-                                <div class="left">
-                                    <label for="grade">좌석등급</label>
-                                    <select name="grade" id="grade">
-                                        <option value="">선택</option>
-                                        <option value="비지니스">비지니스</option>
-                                        <option value="이코노믹">이코노믹</option>
-                                    </select>
-                                </div>
-    
-                                <div class="right">
-                                    <ul class="clearfix">
-                                        <li> 
-                                            <label for="grade">성인</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>
-                                    
-                                        <li> 
-                                            <label for="grade">아이</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>   
-                                    </ul>
-                                 </div>    
-                         </li>
-                    </ul>
-                </fieldset>
-                <input type="submit" class="btnSubmit" value="검색">
-            </form>
-        
-    
-</div> 
-
-<!-- ------폼문서 1세트엔드---------- -->
-
-<!-- 슬라이더랩안에서는 클픽안되나? -->
-<div class="sliderWrap mb15">
-      
-
-        <div class="sliderPager">   
-            <div class="bxPager">
-                <ul>
-                                  
-                    
-                        <a href="#" data-slide-index="0">
-                        <img src="images/iconfm01.png" alt="">
-                        <p>공항예약</p>  </a>
-                    <a href="#" data-slide-index="1">
-                        <img src="images/iconfm02.png" alt="">
-                        <p>호텔예약</p>  </a>
-                    <a href="#" data-slide-index="2">
-                        <img src="images/iconfm03.png" alt="">
-                        <p>렌트카</p>  </a>
-                    <a href="#" data-slide-index="3">
-                        <img src="images/iconfm041.png" alt="">
-                        <p>휴양지</p>  </a>
-                </ul>
-            </div>
-        </div>
-    
-
-
-
-     <ul class="slider">
-        <li>
-            <form action="#" class="form" method="get">
-                <fieldset>
-                    <legend class="blind">여행일정</legend>
-                    <ul>
-                        <li>
-                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
-                            <select name="golo" id="golo" class="mb5">
-                                <option value="">선택하세요</option>
-                                <option value="미국">미국</option>
-                                <option value="일본">일본</option>
-                                <option value="중국">중국</option>
-                            </select>
-                        </li>
-                        <li class="clearfix mb5">
-                            <div class="left">
-                                <label for="sdate">출발일</label>
-                                <input type="date" id="sdate">
-                            </div>
-                            <div class="right">
-                                <label for="edate">도착일</label>
-                                <input type="date" id="edate">
-                            </div>
-                        </li>
-    
-                            <li class="clearfix mb20">
-                                <div class="left">
-                                    <label for="grade">좌석등급</label>
-                                    <select name="grade" id="grade">
-                                        <option value="">선택</option>
-                                        <option value="비지니스">비지니스</option>
-                                        <option value="이코노믹">이코노믹</option>
-                                    </select>
-                                </div>
-    
-                                <div class="right">
-                                    <ul class="clearfix">
-                                        <li> 
-                                            <label for="grade">성인</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>
-                                    
-                                        <li> 
-                                            <label for="grade">아이</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>   
-                                    </ul>
-                                 </div>    
-                      </li>
-                    </ul>
-                </fieldset>
-                <input type="submit" class="btnSubmit" value="검색">
-            </form>
-        </li>
-    
-        <li>
-            <form action="#" class="form" method="get">
-                <fieldset>
-                    <legend class="blind">여행일정</legend>
-                    <ul>
-                        <li>
-                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
-                            <select name="golo" id="golo" class="mb5">
-                                <option value="">선택하세요</option>
-                                <option value="미국">미국</option>
-                                <option value="일본">일본</option>
-                                <option value="중국">중국</option>
-                            </select>
-                        </li>
-                        <li class="clearfix mb5">
-                            <div class="left">
-                                <label for="sdate">출발일</label>
-                                <input type="date" id="sdate">
-                            </div>
-                            <div class="right">
-                                <label for="edate">도착일</label>
-                                <input type="date" id="edate">
-                            </div>
-                        </li>
-    
-                            <li class="clearfix mb20">
-                                <div class="left">
-                                    <label for="grade">좌석등급</label>
-                                    <select name="grade" id="grade">
-                                        <option value="">선택</option>
-                                        <option value="비지니스">비지니스</option>
-                                        <option value="이코노믹">이코노믹</option>
-                                    </select>
-                                </div>
-    
-                                <div class="right">
-                                    <ul class="clearfix">
-                                        <li> 
-                                            <label for="grade">성인</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>
-                                    
-                                        <li> 
-                                            <label for="grade">아이</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>   
-                                    </ul>
-                                 </div>    
-                      </li>
-                    </ul>
-                </fieldset>
-                <input type="submit" class="btnSubmit" value="검색">
-            </form>
-        </li>
-
-        <li>
-            <form action="#" class="form" method="get">
-                <fieldset>
-                    <legend class="blind">여행일정</legend>
-                    <ul>
-                        <li>
-                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
-                            <select name="golo" id="golo" class="mb5">
-                                <option value="">선택하세요</option>
-                                <option value="미국">미국</option>
-                                <option value="일본">일본</option>
-                                <option value="중국">중국</option>
-                            </select>
-                        </li>
-                        <li class="clearfix mb5">
-                            <div class="left">
-                                <label for="sdate">출발일</label>
-                                <input type="date" id="sdate">
-                            </div>
-                            <div class="right">
-                                <label for="edate">도착일</label>
-                                <input type="date" id="edate">
-                            </div>
-                        </li>
-    
-                            <li class="clearfix mb20">
-                                <div class="left">
-                                    <label for="grade">좌석등급</label>
-                                    <select name="grade" id="grade">
-                                        <option value="">선택</option>
-                                        <option value="비지니스">비지니스</option>
-                                        <option value="이코노믹">이코노믹</option>
-                                    </select>
-                                </div>
-    
-                                <div class="right">
-                                    <ul class="clearfix">
-                                        <li> 
-                                            <label for="grade">성인</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>
-                                    
-                                        <li> 
-                                            <label for="grade">아이</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>   
-                                    </ul>
-                                 </div>    
-                      </li>
-                    </ul>
-                </fieldset>
-                <input type="submit" class="btnSubmit" value="검색">
-            </form>
-        </li>
-        
-        <li>
-            <form action="#" class="form" method="get">
-                <fieldset>
-                    <legend class="blind">여행일정</legend>
-                    <ul>
-                        <li>
-                            <label for="golo" >가고 싶은 나라를 선택하세요.</label>
-                            <select name="golo" id="golo" class="mb5">
-                                <option value="">선택하세요</option>
-                                <option value="미국">미국</option>
-                                <option value="일본">일본</option>
-                                <option value="중국">중국</option>
-                            </select>
-                        </li>
-                        <li class="clearfix mb5">
-                            <div class="left">
-                                <label for="sdate">출발일</label>
-                                <input type="date" id="sdate">
-                            </div>
-                            <div class="right">
-                                <label for="edate">도착일</label>
-                                <input type="date" id="edate">
-                            </div>
-                        </li>
-    
-                            <li class="clearfix mb20">
-                                <div class="left">
-                                    <label for="grade">좌석등급</label>
-                                    <select name="grade" id="grade">
-                                        <option value="">선택</option>
-                                        <option value="비지니스">비지니스</option>
-                                        <option value="이코노믹">이코노믹</option>
-                                    </select>
-                                </div>
-    
-                                <div class="right">
-                                    <ul class="clearfix">
-                                        <li> 
-                                            <label for="grade">성인</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>
-                                    
-                                        <li> 
-                                            <label for="grade">아이</label>
-                                            <input type="number" id="num" placeholder="1" >
-                                        </li>   
-                                    </ul>
-                                 </div>    
-                      </li>
-                    </ul>
-                </fieldset>
-                <input type="submit" class="btnSubmit" value="검색">
-            </form>
-        </li>
-
-
-
-    </ul>
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
 
 
 
