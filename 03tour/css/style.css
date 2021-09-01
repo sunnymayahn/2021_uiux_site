@@ -68,7 +68,7 @@ body{
 
 /* .contents */
 
-.contents{background : url(../images/bgsky.jpg); no-repeat center;
+.contents{background : url(../images/bgsky.jpg) no-repeat center;
     background-size: cover; padding-top: 66px; 
     /* height: 100vh} */
     }
