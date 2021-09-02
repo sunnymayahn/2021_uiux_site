@@ -12,7 +12,6 @@
     
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
 
     <link rel="stylesheet" href="css/reset.css">
@@ -20,7 +19,7 @@
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
+    
 
 
 
@@ -32,7 +31,9 @@
                 mode:'vertical',
                 controls:false
             });
-
+            $(".slider1").bxSlider({
+                pager:false
+            });
                     })
                  
     </script>
@@ -73,11 +74,11 @@
             <div class="gnbWp">
                 <nav class="gnb w98">
                     <ul class="clearfix">
-                        <li><a href="#">여행도시</a></li>
+                        <li><a href="citytour.html">여행도시</a></li>
                         <li><a href="#">호텔예약</a></li>
                         <li><a href="#">렌트카</a></li>
                         <li><a href="#">여행TIP</a></li>
-                        <li><a href="#">회사소개</a></li>
+                        <li><a href="company.html">회사소개</a></li>
                         <li><a href="#">커뮤니티</a></li>
                 
                     </ul>
@@ -349,31 +350,26 @@
 
                <div class="main1">
                  <ul class="clearfix">
-                    <li><a href=""><img src="images/tour101.png" alt="#"></a> </li>
-                    <li><a href=""><img src="images/tour102.png" alt="#"></a> </li>
+                    <li><a href=""><img src="images/tour101.png" alt="#">
+                    <div class="box1">
+                        프랑스 <span>W1,900,000~</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    </a> </li>
+
+                    <li><a href=""><img src="images/tour102.png" alt="#">
+                        <div class="box1">
+                            일본 <span>W890,000~</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        </a> </li>
                     
                  </ul>
                </div>
            
- <!-- <li>
-                    <ul class="slider1" >
-                        <li><img src="images/slide01.png " alt="">
-                            <div class="sliderTxt">
-                                <p>테스트  </p>
-                              </div>
-                        </li> 
-                    </ul>
-                </li>  -->
-
-
-
-
 
 
             </div>
-
-
-
 
 
 
@@ -389,36 +385,120 @@
         </div>
 
 
-
-
         <div class="main2 mb15" >
             <ul class="clearfix">
-                <li><a href=""><img src="images/tour201.png" alt="#">
-                <div class="box">
-                   HILTON HOTEL(PARIS) <br>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                </div></a> </li>
+                <li>
+                    <ul class="slider1" >
+                        <li><a href="">
+                            <img src="images/tour201.png" alt="#">
+                                <div class="box">
+                                    HILTON HOTEL(PARIS) <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                 </div> </a>  
+                        </li>
+                    
+                        <li><a href="">
+                            <img src="images/hotel01.png" alt="#">
+                                <div class="box">
+                                    WESTIN HOTEL(PARIS) <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                 </div></a>
+                        </li>
+                        <li><a href="">
+                            <img src="images/hotel02.png " alt="#">
+                                <div class="box">
+                                    MARIOT HOTEL(PARIS) <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                 </div></a>
+                        </li> 
+                    </ul>
+               </li>
 
-                <li><a href=""><img src="images/tour202.png" alt="#">
-                    <div class="box">
-                        관광명소(디즈니랜드) <br>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                     </div></a> </li>
+                <li>
+                     <ul class="slider1" >
+                        <li><a href="">
+                            <img src="images/tour202.png" alt="#">
+                                <div class="box">
+                                    관광명소(디즈니랜드) <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                 </div> </a>  
+                        </li>
+                    
+                        <li><a href="">
+                            <img src="images/park01.png" alt="#">
+                                <div class="box">
+                                    관광명소(에버랜드) <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                 </div></a>
+                        </li>
+                        <li><a href="">
+                            <img src="images/park02.png" alt="#">
+                                <div class="box">
+                                    관광명소(서울랜드) <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                 </div></a>
+                        </li> 
+
+
+                    </ul>
+                    
+                                 
+                </li>
+
+
+
+
+
+
+
+
+
+
+
 
                 <li><a href=""><img src="images/tour203.png" alt="#">
+                    <h3>TOKYO</h3>
                     <div class="box">
                         20C 구름조금 <br>
                         <p>습도60% 바람남남동2m/s</p> 
                      </div></a> </li>
+
                 <li><a href=""><img src="images/tour204.png" alt="#">
+                    <div class="cellTxt">
+                        <h3 class="mb15">"Lorem ipsum, dolor sit amet consectetur adipisicing tdolr."</h3>
+                            <p>프랑스파리 자유여행<br>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star gray"></i>
+                                <i class="fas fa-star gray"></i>
+                    </p> </div>
+
+                    
                     <div class="box">
                          facebook여행후기<br>
                          <p>(임정희님)</p>
@@ -528,6 +608,10 @@
 <img src="images/air3.png" alt="#" class="air3">
 
 <br><br>
+
+
+
+
 
 
 

@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px; letter-spacing: -0.5px;
     overflow-x: hidden;
+    min-width: 980px; 
     /* z-index: 1 */
    }
 
@@ -52,21 +53,22 @@ body{
 .snsMenu {width: 310px;height: 30px; }
 /* .snsMenu span{float: left;width: 220px;} */
 .snsMenu>ul>li{ float: left; width: calc( 160px / 5 ) ;}
-.snsMenu>ul>li:first-child{width: 170px; background-color: orange;text-align: center;}
+.snsMenu>ul>li:first-child{width: 170px; text-align: center;}
 .snsMenu>ul>li:first-child>a{line-height: 30px; font-size: 18px; color: white;}
 
 .gnbWp{border-bottom: 5px solid #0E73A7}
 .gnb li{float: left; width: calc( 100%/ 6 ) ;height: 60px;line-height: 66px;
         border-left: 2px solid #eee;  }
-     
+
+.gnb li.active{background: gray;}
+
 .gnb li:last-child{border-right: 2px solid #eee;}
 .gnb li>a{font-size: 16px;font-weight: bold;color: #1A2B34;
     display: block; text-align: center;}
-.gnb li>a:hover{background-color: purple;color: white; }  
+.gnb li>a:hover{background-color:#0E73A7;color: white; }  
 
 
-
-/* .contents */
+/* index contents */
 
 .contents{background : url(../images/bgsky.jpg) no-repeat center;
     background-size: cover; padding-top: 66px; 
@@ -148,15 +150,17 @@ body{
  /* booking form */
 .bx-wrapper { -moz-box-shadow: none;    -webkit-box-shadow: none;
             box-shadow: none;border: 0 none;    margin-bottom: 0;}
-.bx-wrapper {width: 335px;height: 300px; float: left;background-color:white;
-           padding-top: 20px;
+.bx-wrapper {width: 335px;
+            /* height: 300px;  */
+            float: left;background-color:white;
+           /* padding-top: 20px; */
         }
 
                /* .sliderSkin{width: 335px;height: 300px; float: left;  } */
 .slider{ padding: 25px 25px 0; float: left; }
 .form{width: 280px;  height: 300px; margin-top: 30px;}
 
-fieldset{border: 0;}
+fieldset{border: 0; padding-top: 20px; }
 .blind{display: block;position: absolute;left: 0;top: -9999px;}
 
 
@@ -184,39 +188,54 @@ fieldset{border: 0;}
  
  /* main1 .slider 2세트  **************************************************/
 
-.main1 li{float: left; width: 235px;margin-right: 15px;}
+.main1 li{float: left; width: 235px;margin-right: 15px;
+         position: relative;}
+.main1 .box1{width: 235px;height: 50px;position: absolute;bottom: 0;
+    background: #152630;   color: white; padding: 10px 20px;
+display: flex; justify-content: space-between; align-items: center;}
+
+.main1 .box1 span{color: #3fd050;}
 
 
 
-
-
-.main2 { position: relative; z-index: 1;}
+.main2 {position: relative; z-index: 1;}
                   /* 메인탑에있는 풍선이 메인2에도 걸려서 움직임 */
 .main2 li,.main3 li {float: left; width: calc((100% - 45px) / 4); 
-                    height: 240px; margin-right: 15px;
+                    height: 240px; margin-right: 15px; position: relative;
                         } 
 .main li:last-child{margin-right: 0;}
 
 .main2 .box{width: 235px;height: 65px;position: absolute;bottom: 0;
     color: white;padding: 15px 20px;}
-.main2 li:nth-child(1) .box{background: #529351 }
-.main2 li:nth-child(2) .box{background: #152630  }
-.main2 li:nth-child(3) .box{background: #152630 ;opacity: 0.7; }
-.main2 li:nth-child(4) .box{background: #44619D}
- 
-.main2 i{color:gold;}
+
+.main2>ul>li:nth-child(1) .box{background: #337733 }
+.main2>ul>li:nth-child(2) .box{background: #152630 }
+.main2>ul>li:nth-child(3) .box{background: rgba(21, 38, 48, 0.8) }
+.main2>ul>li:nth-child(4) .box{background: #44619D}
+
+
+
+.main2 li:nth-child(3) h3
+          {position: absolute;top: 20px;
+            left: 95px;  color: white;
+            font-size: 17px; font-weight: 400; }
+.main2 p{font-size: 12px;}
+.main2 i{color:gold;font-size: 10px;}
 .main2 i:last-child{color:white;}
 
+.main2>ul>li:nth-child(4) .cellTxt
+                      { position: absolute;top: 0; margin: 20px;color: #333}
 
-
-
+.main2>ul>li:nth-child(4) .cellTxt>h3 {font-weight: 400;}
+.main2>ul>li:nth-child(4) .cellTxt>p{color: #44619D;font-weight: bold;}
+.main2>ul>li:nth-child(4) .cellTxt .gray {color: gray ;}
 
 
 .main3 li{float: left; position: relative;} 
 
 .main3 .txt{position: absolute;top: 20px;left: 30px;
     text-align: center; color: white} 
-.main3 h2 {font-size: 18px;font-weight: bold;}
+.main3 h2 {font-size: 17px;font-weight: bold;}
 .main3 .bg{width: 100%;height: 100%; position: absolute;top: 0;
             background: rgb(29, 29, 51);
             opacity:0 ;transition:0.3s }  
@@ -237,7 +256,7 @@ fieldset{border: 0;}
 
 .circle .bar1{transform:translate(-50%,-50%) rotate(90deg)}
 
-.main3 li:hover { box-shadow:0 15px 15px lightseagreen;}
+.main3 li:hover { box-shadow:10px 10px 15px lightseagreen;}
                     /* transform:scale(1.1)}*/
                 
 .main3 li:hover .circle{ transform:translate(-50%,-50%) rotate(180deg)} 
@@ -246,11 +265,7 @@ fieldset{border: 0;}
 
 
 
-
-
-
-
-
+/* footer */
 
 .fMenu>ul>li{float: left;}
 .fMenu>ul>li>a{display: block;text-align: center;line-height: 14px;
@@ -265,3 +280,39 @@ fieldset{border: 0;}
 
 
 
+
+/* subContents common */
+.subContents .subImg{height: 300px;
+            background: skyblue;
+            display: flex;justify-content: center;align-items: center;
+            ; background-repeat: no-repeat;background-position: center;
+            background-size: cover;}
+
+.subContents .subImgTitle{text-align: center; transform: translateY(-30px);}
+.subContents .subImgTitle h3{ font-size: 2em; text-shadow: 0 0 10px #fff;}
+.subContents .subImgTitle h3:after{ 
+    content: "";display: block;width: 80%;
+    height: 2px;background: black;margin: 10px auto;}
+
+.subContents .container{padding: 30px 0;}
+.subContents .container img{ display: block;margin: 0 auto; }
+.subContents .location{ width: 860px;margin: 0 auto; margin-bottom: 16px;}
+.
+
+
+/* subContents company */
+body .sub{background: #ccc;}
+
+.subContents.company .subImg {
+    background-image: url(../images/subimg01.jpg) }
+.subContents.company .container
+        {border: 1px solid #999;
+        border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    position: relative;top: -50px;}   
+
+
+/* subContents citytour */
+.subContents.cityTour .subImg {
+    background-image: url(../images/subimg02.jpg) }
+    

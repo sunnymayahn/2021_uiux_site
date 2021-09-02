@@ -66,13 +66,13 @@ ul.bxslider {
   background: #666;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 0 5px;
   outline: 0;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 7.5px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
@@ -92,28 +92,35 @@ ul.bxslider {
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 10px;
-  background: url('../images/controls.png') no-repeat 0 -32px;
+  /* left: 10px; */
+  /* background: url('../images/controls.png') no-repeat 0 -32px; *******************/
+  background: url('../images/iconleft.png') no-repeat center;
+  opacity: 0.8;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
+  /* background-position: 0 0; */
 }
 .bx-wrapper .bx-next {
-  right: 10px;
-  background: url('../images/controls.png') no-repeat -43px -32px;
+  right: 1px; 
+  /* background: url('../images/controls.png') no-repeat -43px -32px; **************/
+  background: url('../images/iconright.png') no-repeat center;
+  opacity: 0.8;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
+  /* background-position: -43px 0; */
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 50%;
+  /* top: 50%; ***************************/
+  top: 35%;
+
   margin-top: -16px;
   outline: 0;
-  width: 32px;
-  height: 32px;
+   /* width: 32px;  height: 32px; *******************/
+  width: 30px;
+  height: 47px;
   text-indent: -9999px;
   z-index: 9999;
 }
