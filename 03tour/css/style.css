@@ -60,7 +60,7 @@ body{
 .gnb li{float: left; width: calc( 100%/ 6 ) ;height: 60px;line-height: 66px;
         border-left: 2px solid #eee;  }
 
-.gnb li.active{background: skyblue;}
+.gnb li.active{background: rgb(190, 214, 202);}
 
 .gnb li:last-child{border-right: 2px solid #eee;}
 .gnb li>a{font-size: 16px;font-weight: bold;color: #1A2B34;
@@ -282,14 +282,14 @@ display: flex; justify-content: space-between; align-items: center;}
 
 
 /* subContents common */
-.subContents .subImg{height: 300px;
+.subContents .subImg{height: 250px;
             display: flex;justify-content: center;align-items: center;
             ; background-repeat: no-repeat;background-position: center;
             background-size: cover;}
 
 .subContents .subImgTitle{text-align: center; transform: translateY(-30px);color: #112530}
-.subContents .subImgTitle h3{ font-size: 2em; text-shadow: 0 0 50px #fff;}
-.subContents .subImgTitle p{text-shadow: 0 0 10px #fff;}
+.subContents .subImgTitle h3{ font-size: 2em; text-shadow: 2px 2px 20px #fff;}
+.subContents .subImgTitle p{text-shadow: 0 0 20px #fff;}
 .subContents .subImgTitle h3:after{ 
     content: "";display: block;width: 80%;
     height: 2px;background: #1A2B34;margin: 10px auto;}
@@ -298,7 +298,7 @@ display: flex; justify-content: space-between; align-items: center;}
 
 .subContents .container{padding: 30px 0;margin-bottom: 50px;}
 .subContents .container img{ display: block;margin: 0 auto; }
-.subContents .location{ width: 860px;margin: 0 auto; margin-bottom: 16px;}
+.subContents .location{ width: 980px;margin: 20px auto; margin-bottom: 30px;color:darkslateblue ;}
 
 
 
@@ -306,19 +306,16 @@ display: flex; justify-content: space-between; align-items: center;}
 body .sub{background: #ccc;}
 
 .subContents.company .subImg {
-    background-image: url(../images/subimg01.jpg) }
+    background-image: url(../images/subimg01.jpg); }
 .subContents.company .container
         {border: 1px solid #999;border-top: 5px solid #0664A1;
     border-bottom: 5px solid #0664A1;margin-bottom: 30px;
-    position: relative;top: -50px; background: #fff;}   
+    position: relative;top: -50px; background: #fff; padding: 30px;   }   
 
 
 /* subContents citytour */
-.subContents.cityTour .subImg {
-    background-image:url(../images/sub03.jpg) }
-
- 
-/* .content{width: 980px;margin: 0 auto;} */
+/* .subContents.cityTour .subImg {
+    background-image:url(../images/sub03.jpg) } */
 .container h1{text-align: left;padding: 50px 0; color: #112530}
 .container>ul>li{float: left;width: 310px;margin-right: 25px;margin-bottom: 50px;}
 .container>ul>li>img{width: 100%;height: 240px;}
@@ -326,6 +323,13 @@ body .sub{background: #ccc;}
 .container>ul>li>.txt{padding: 18px 16px; color: #112530; padding: 10px; }
 .container>ul>li h3{font-size: 18px}
 
-
+/* subContents hotel */
+.subContents.cityTour .subImg { background:rgb(193, 187, 211)}
+.subContents.hotel .subImg { background:rgb(223, 199, 207)}
+.subContents.car .subImg { background:rgb(178, 206, 214);}
+/* .subContents.tourtip .subImg { background:rgb(245, 230, 250);} */
+.subContents.community .subImg { background:rgb(216, 216, 191);}
+  
 
     
+
