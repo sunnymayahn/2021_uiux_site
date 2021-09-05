@@ -325,7 +325,7 @@ body .sub{background: #ccc;}
 
 /* subContents hotel */
 .subContents.cityTour .subImg { background:rgb(193, 187, 211)}
-.subContents.hotel .subImg { background:rgb(223, 199, 207)}
+.subContents.hotel .subImg { background: rgb(223, 199, 207)}
 .subContents.car .subImg { background:rgb(178, 206, 214);}
 /* .subContents.tourtip .subImg { background:rgb(245, 230, 250);} */
 .subContents.community .subImg { background:rgb(216, 216, 191);}
