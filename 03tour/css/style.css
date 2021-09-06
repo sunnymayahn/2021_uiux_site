@@ -4,8 +4,7 @@ body{
     font-size: 14px; letter-spacing: -0.5px;
     overflow-x: hidden;
     min-width: 980px; 
-    /* z-index: 1 */
-   }
+     }
 
 
 .w98{width: 980px;margin: 0 auto;}
@@ -57,7 +56,7 @@ body{
 .snsMenu>ul>li:first-child>a{line-height: 30px; font-size: 18px; color: white;}
 
 .gnbWp{border-bottom: 5px solid #0E73A7}
-.gnb li{float: left; width: calc( 100%/ 6 ) ;height: 60px;line-height: 66px;
+.gnb li{float: left; width: calc( 100% / 6 ) ;height: 60px;line-height: 66px;
         border-left: 2px solid #eee;  }
 
 .gnb li.active{background: rgb(190, 214, 202);}
@@ -323,7 +322,7 @@ body .sub{background: #ccc;}
 .container>ul>li>.txt{padding: 18px 16px; color: #112530; padding: 10px; }
 .container>ul>li h3{font-size: 18px}
 
-/* subContents hotel */
+/* subContents .subImg color */
 .subContents.cityTour .subImg { background:rgb(193, 187, 211)}
 .subContents.hotel .subImg { background: rgb(223, 199, 207)}
 .subContents.car .subImg { background:rgb(178, 206, 214);}
