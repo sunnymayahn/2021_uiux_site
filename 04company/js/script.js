@@ -10,6 +10,16 @@ $(document).ready(function(){
         slider1.goToPrevSlide();
     });
 
+    // $(".modal").colorbox({ 
+    //     rel:".modal"
+    // });
+
+    $(".youtube").colorbox({
+        iframe:true,
+        innerWidth:700,
+        innerHeight:315
+    });
+
     // $(".toggle").on("이벤트명", 리스너);
     // $(".toggle").on("click", function(){});
     // $(".toggle").click(function(){})
