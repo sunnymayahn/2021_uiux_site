@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>915_company_flex</title>
+
+    <style>
+        html,body{height: 100%;}
+        .box{width: 500px;height: 100px;margin: 0 auto;background: skyblue;
+        border: 1px solid #000;}
+        .box div:nth-child(2n){background: orange;}
+        .box div:nth-child(2n+1){background: white;}
+        .box div:nth-child(5){background: red;}
+        .box{display: flex; flex-wrap: wrap;
+            /* justify-content: space-between; */
+
+        }
+        /* .box div{width: 10%;} 20% 꽉채움 그이상은 변동없음 예50% 아래로 떨어지지도 않음
+        그래서 flex-wrap: wrap을 사용 아래로 떨어지는 기능*/
+        /* .box div{flex-grow: 0;} 자신을 변경시킴  */
+        /* .box div{flex-grow: 1;
+             _flex-basis: 20%; 나머지공간 20퍼/ 내용늘어나면 내용+나머지공간으로 크기결정
+                              컨텐츠크기를 동일하게 사용하면 크기 동일하게 사용가능
+            _width: 20%;} */
+            .box div{ 
+                _flex:1 50%;
+                width: 50%; 
+                order: 6;
+
+                /* flex: 1 auto; */
+                /* flex:1 ;transition: 0.3s; */
+            }
+            /* .box .box3{flex: 2;}
+            .box .box4{flex: 4;} */
+            /* .box div:hover{flex: 1.4;} */
+
+            .box .box1{order: 4}
+            .box .box2{order: 3;}
+            .box .box3{}
+            .box .box4{order:2}
+            .box .box5{order: 1;}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+</body>
+</html>
