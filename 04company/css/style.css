@@ -203,6 +203,7 @@ body{
 .fRight>li:nth-child(2n+1){width:740px;background: yellowgreen;}
 .fmenu li{float: left;padding: 0 10px;line-height: 40px;}
 .sns li{float: left;}
+.info>p{text-align: left;}
 .btn{border: 1px solid #eee;text-align: center;padding: 5px;}
 
 
