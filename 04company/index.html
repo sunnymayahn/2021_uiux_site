@@ -134,7 +134,50 @@
                
 
 
-                <li> 3</li>
+                <!-- header contents slider -->
+                <li> 
+
+                    <div class="slider2Wrap">
+                        <ul class="slider2">
+                            <li class="s2list clearfix">
+                                <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Consectetur, earum.</div>
+                                <div class="right">
+                                    <img src="images/sdr3.png" alt=" "></div>
+                                    
+                            </li>
+                            <li class="s2list clearfix">
+                                <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Consectetur, earum.</div>
+                                <div class="right">
+                                    <img src="images/sdr2.png" alt=" "></div>
+                                    
+                            </li>
+                            <li class="s2list clearfix">
+                                <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Consectetur, earum.</div>
+                                <div class="right">
+                                    <!-- <img src="images/sdr2.png" alt=" "></div> -->
+                                    <img src="images/guide4.jpg" alt=" "></div>
+                                    
+                            </li>
+
+
+
+                        </ul>
+                    
+                        <h2>체험학습</h2>
+                        <div class="btn">
+                            <img src="images/btn01_01.jpg" alt=""class="prevBtn">
+                            <img src="images/btn01_02.jpg" alt=""class="nextBtn">
+                        </div>
+                    </div>
+
+
+                </li>
+
+
+
 
                 <li> <a href=""><img src="images/icn31.png" alt="" class="mb10" >
                      <p>생태설명회</p> </a>
@@ -238,25 +281,32 @@
     <div class="main2 w12 mb50">
         <ul class="guide clearfix mb10">
             <li><a href="">
-                <h2>전시관안내</h2>
-                <p>Lorem ipsum dolor sit, amet 
-                    <br> consectetur adipisicing elit. </p></a>
+                <div class="liTxt">
+                    <h2 class="mb10">전시관 안내</h2>
+                    <p>Lorem ipsum dolor sit, amet dolor consectetur adipisicing elit. </p>
+                </div></a>
             </li>
-            <li><a href=""><img src="images/guide3.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/guide13.jpg" alt=""></a></li>
             <li><a href=""><img src="images/guide14.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/guide15.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/guide3.jpg" alt=""></a></li>
             
             
        </ul>
 
        <ul class="friends clearfix">
            <li><a href=""><img src="images/guide5.jpg" alt=""></a></li>
-         <li><a href=""><img src="images/guide4.jpg" alt=""></a></li>
+           <li><a href=""><img src="images/guide4.jpg" alt=""></a></li>
             <li><a href="">
-                <h2>아쿠아친구들</h2>
-                <p>Lorem ipsum dolor sit,amet <br> 
-                    consectetur adipisicing elit. </p></a>
+               
+                    <div class="liTxt">
+                        <h2 class="mb10">아쿠아 친구들</h2>
+                        <p>Lorem ipsum dolor sit,amet <br>
+                            consectetur adipisicing dolor sit, amet elit. </p>
+                    </div>
+                </a>
             </li>
+
+            
         <li><a href=""><img src="images/guide6.jpg" alt=""></a></li>
     
    </ul>
@@ -270,10 +320,13 @@
    </div>
     
 
+<div class="ticket mb20"><img src="images/barcode.png " alt=""></div>
+
+
 <div class="fWrap">
-<footer id="footer">
-  <h1><a href=""><img src="images/logo_63_BI.gif" alt=""></a></h1>
-  <ul class="fRight clearfix">
+<footer id="footer" class="clearfix">
+    <h1><a href=""><img src="images/logo_63_BI.gif" alt=""></a></h1>
+    <ul class="fRight clearfix">
     <li>
         <ul class="fmenu clearfix">
             <li><a href="">이메일무단수집거부</a></li>
@@ -299,15 +352,39 @@
             서울시 영등포구 여의도동 60 서울특별시 영등포구 63로 36, 리버타워<br>
             Copyright ⓒ Aquaplanet Co.,Ltd. All Rights Reserved.</p>
     </li>
-    <li class="btn">FAMILY SITE +</li>
+    <li class="fBtn" >FAMILY SITE +</li>
     
 </ul>       
 
 </footer>
 </div>
 
+<br><br><br><br><br><br><br><br>
+<!-- ************test************ -->
+<div class="test w12">test <br>
+    <div id="digClock" style="color: darkblue;font-size: 20px;"></div>
+</div>
+<script>
+function digClock() {
+var today=new Date();
+var day=today.getMonth()+1 + "월 " + today.getDate() + "일 "; 
+var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+document.getElementById("digClock").innerHTML=day+time;
+setTimeout('digClock()', 1000);
+}
+digClock();
+</script>
+<!-- ************test************ -->
+
+   
+
+
+
+
+
+
+
+
+
 </body>
-
-
-
 </html>
