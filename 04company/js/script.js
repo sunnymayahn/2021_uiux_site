@@ -51,25 +51,21 @@ $(document).ready(function(){
             // $(".toggle").addClass("active");
             document.getElementsByClassName("toggle")[0].classList.add("active");
             $(".gnb").addClass("view");
-            // $(".sns").addClass("view")
-
-
-
-
-
+            $(".sns").addClass("view");
 
 
         }else{
             // $(".toggle").removeClass("active");
             document.getElementsByClassName("toggle")[0].classList.remove("active");
-            $(".gnb").removeClass("view")
-
+            $(".gnb").removeClass("view");
+            $(".sns").removeClass("view");
              }
     });
 
 $(window).resize(function(){
     $(".toggle").removeClass("active");
     $(".gnb").removeClass("view");
+    $(".sns").removeClass("view");
 });
 
 });
