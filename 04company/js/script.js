@@ -42,15 +42,16 @@ $(document).ready(function(){
         const toggle = $(".toggle").attr("class");// value 값이 toggle
         // console.log(toggle);
 
+
+
+
+
+
         if(toggle == "toggle"){
             // $(".toggle").addClass("active");
             document.getElementsByClassName("toggle")[0].classList.add("active");
-            $(".gnb").addClass("view")
-
-
-
-
-            // $(".slideTxt").addClass("view")
+            $(".gnb").addClass("view");
+            // $(".sns").addClass("view")
 
 
 
