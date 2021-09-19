@@ -30,8 +30,8 @@ $(document).ready(function(){
 
     $(".youtube").colorbox({
         iframe:true,
-        innerWidth:700,
-        innerHeight:315
+        innerWidth:900,
+        innerHeight:415
     });
 
     // $(".toggle").on("이벤트명", 리스너);
@@ -43,29 +43,37 @@ $(document).ready(function(){
         // console.log(toggle);
 
 
-
-
-
-
         if(toggle == "toggle"){
             // $(".toggle").addClass("active");
             document.getElementsByClassName("toggle")[0].classList.add("active");
             $(".gnb").addClass("view");
-            $(".sns").addClass("view");
+            // $(".sns").addClass("view");
+            // $(".fRight").addClass("view");
+            $("#footer").addClass("view");
 
 
         }else{
             // $(".toggle").removeClass("active");
             document.getElementsByClassName("toggle")[0].classList.remove("active");
             $(".gnb").removeClass("view");
-            $(".sns").removeClass("view");
+            // $(".fRight").removeClass("view");
+            $("#footer").removeClass("view");
              }
     });
 
 $(window).resize(function(){
     $(".toggle").removeClass("active");
     $(".gnb").removeClass("view");
-    $(".sns").removeClass("view");
+    // $(".fRight").removeClass("view");
+    $("#footer").removeClass("view");
 });
 
+
+
+
+
+
+
 });
+
+

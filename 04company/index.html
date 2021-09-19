@@ -24,22 +24,39 @@
 
 <body>
     <header id="header" class="mb50" >
+        <!-- <div class="hWrap w12"> -->
         <div id="headerTop">
             <h1 class="logo">
-                <a href="#"> <img src="images/logo_white.png " alt=""></a>
-                <!-- <a href="#"> acua planet63</a> -->
-            </h1>
-            <nav class="gnb">
+                <a href="#"> <img src="images/logo_beige.png" alt="">
+                </a>
+               </h1>
+
+            <nav class="gnb w12">
                 <ul class="clearfix">
+                    <li class="logo">
+                        <a href="#"> <img src="images/logo_white.png" alt=""></a>
+                     
+                        <ul class="submenu time ">
+                            <li class="mb10"><i class="far fa-clock"> 운영시간 안내</i> </li>
+                            <!-- <li><i class="far fa-clock"></i>운영시간 안내 </li> -->
+                            <li><div id="digClock" style="color: navy; font-weight: 100;"></div></li>
+                            <li> AM 10:00 - PM 7:00</li>
+                            <li>입장마감 PM 6:30</li>
+                            
+                            
+                            </ul>
+                    </li>
+
                     <li>
                         <a href="#">이용안내</a>
-                            <ul class="submenu">
+                      <!-- <div class="subWrap w12">  -->
+                           <ul class="submenu">
                                 <li><a href="#">이용시간</a></li>
                                 <li><a href="#">가이드맵</a></li>
                                 <li><a href="#">편의시설</a></li>
                                 <li><a href="#">기프트샵</a></li>
                             </ul>
-       
+                        <!-- </div> -->
                     </li>
 
                     <li><a href="#">프로그램</a>
@@ -60,9 +77,9 @@
                         </ul>
    
                     </li>
-                    <li><a href="#">아쿠아플라넷</a>
+                    <li><a href="sub04ci.html">아쿠아플라넷</a>
                         <ul class="submenu">
-                            <li><a href="#">아쿠아플라넷63</a></li>
+                            <li><a href="sub04ci.html">아쿠아플라넷63</a></li>
                             <li><a href="#">플라넷친구들</a></li>
                             <li><a href="#">해양생물연구센터</a></li>
                             <li><a href="#">오시는길</a></li>
@@ -90,6 +107,14 @@
                 <div class="bar3"></div>
             </div>
         </div>
+    <!-- </div>         -->
+
+
+
+
+
+
+
         <div class="sliderWrap">
             <ul class="slider">
                 <li class="sdrImg1">
@@ -386,8 +411,11 @@
 
 
 <div class="fWrap">
-<footer id="footer" class="clearfix">
-    <h1><a href=""><img src="images/logo_63_BI.gif" alt=""></a></h1>
+<footer id="footer" class=" clearfix">
+    <div class="fLeft">
+        <h1><a href=""><img src="images/logo_foot.png " alt=""></a></h1>
+        <h2><a href=""><img src="images/logo_white.png" alt=""></a></h2>
+   </div>
     <ul class="fRight clearfix">
     <li>
         <ul class="fmenu clearfix">
@@ -421,24 +449,21 @@
 </footer>
 </div>
 
-<br><br><br><br><br><br><br><br>
-<!-- ************test************ -->
-<div class="test w12">test <br>
-    <div id="digClock" style="color: darkblue;font-size: 20px;"></div>
-</div>
+<br><br><br><br><br><br>
+
+
+
+
 <script>
 function digClock() {
-var today=new Date();
-var day=today.getMonth()+1 + "월 " + today.getDate() + "일 "; 
-var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
-document.getElementById("digClock").innerHTML=day+time;
-setTimeout('digClock()', 1000);
-}
-digClock();
-</script>
-<!-- ************test************ -->
-
-   
+    var today=new Date();
+    var day=today.getMonth()+1 + "월 " + today.getDate() + "일 "; 
+    var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+    document.getElementById("digClock").innerHTML=day+time;
+    setTimeout('digClock()', 1000);
+    }
+    digClock();
+</script>   
 
 
 
