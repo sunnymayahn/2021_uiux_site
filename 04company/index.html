@@ -20,11 +20,28 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+  
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    
+    <script> new WOW().init(); </script>
+
+
+
+
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/script.js "></script>
 <script src="js/jquery.colorbox-min.js"></script>
+
+
 </head>
+
+
+
+
+
 
 <body>
     <header id="header" class="mb50" >
@@ -123,15 +140,15 @@
             <ul class="slider">
                 <li class="sdrImg1">
                     <div class="slideTxt">
-                        <h1 >동화 속 인어 공주를 만나 보세요</h1>
-                        <h2 >Welcome to Acua Planet 63!</h2>
+                        <h1 class="wow fadeInLeft" data-wow-delay="0" _data-wow-iteration="infinite" >동화 속 인어 공주를 만나 보세요</h1>
+                        <h2 class="wow fadeInRight" data-wow-delay="0.2s" _data-wow-iteration="infinite" >Welcome to Acua Planet 63!</h2>
                         
                     </div>
                </li>
                <li class="sdrImg2">
                 <div class="slideTxt">
-                    <h1>도심 속 바다여행</h1>
-                    <h2>Welcome to Acua Planet 63!</h2>
+                    <h1 class="wow fadeInDown" data-wow-delay="0">도심 속 바다여행</h1>
+                    <h2 class="wow fadeInDown" data-wow-delay="0.2s">Welcome to Acua Planet 63!</h2>
                 </div>
            </li>
            <li class="sdrImg3">
@@ -371,8 +388,9 @@
 
     <div class="main2 w12 mb50">
         <ul class="guide clearfix mb10">
-            <li><a href="">
-                <div class="liTxt">
+            <li ><a href="">
+                <div class="liTxt wow pulse" data-wow-delay="0.5s" data-wow-iteration="infinite">
+                    <!-- <h2 class="mb10">전시관 안내</h2> -->
                     <h2 class="mb10">전시관 안내</h2>
                     <p>Lorem ipsum dolor sit, amet dolor consectetur adipisicing elit. </p>
                 </div></a>
@@ -385,11 +403,12 @@
        </ul>
 
        <ul class="friends clearfix">
-           <li><a href=""><img src="images/guide5.jpg" alt=""></a></li>
-           <li><a href=""><img src="images/guide4.jpg" alt=""></a></li>
-            <li><a href="">
+           <!-- <li class="wow pulse" data-wow-delay="0" data-wow-offset="0" data-wow-iteration="infinite" ><a href=""><img src="images/guide5.jpg" alt=""></a></li> -->
+           <li ><a href=""><img src="images/guide5.jpg" alt=""></a></li>
+           <li ><a href=""><img src="images/guide4.jpg" alt=""></a></li>
+            <li ><a href="">
                
-                    <div class="liTxt">
+                <div class="liTxt wow pulse" data-wow-delay="0.5s" data-wow-iteration="infinite">
                         <h2 class="mb10">아쿠아 친구들</h2>
                         <p>Lorem ipsum dolor sit,amet <br>
                             consectetur adipisicing dolor sit, amet elit. </p>
@@ -398,15 +417,17 @@
             </li>
 
             
-        <li><a href=""><img src="images/guide6.jpg" alt=""></a></li>
+        <li ><a href=""><img src="images/guide6.jpg" alt=""></a></li>
     
    </ul>
     </div>    
     
     <div class="main3 w12 mb50">
         <ul class="event clearfix">
-            <li><a href=""><img src="images/btm1.png" alt=""></a></li>
-            <li><a href=""><img src="images/btm2.png" alt=""></a></li>
+             <li class="wow fadeInLeft" data-wow-delay="0.3s" _data-wow-iteration="infinite" ><a href=""><img src="images/btm1.png" alt=""></a></li>
+            <li class="wow fadeInRight" data-wow-delay="0.3s" _data-wow-iteration="infinite"><a href=""><img src="images/btm2.png" alt=""></a></li>
+            <!-- <li class="wow fadeInLeft" data-wow-delay="0.5s" data-wow-offset="0"><a href=""><img src="images/btm1.png" alt=""></a></li>
+            <li class="wow fadeInRight" data-wow-delay="0.5s" data-wow-offset="0"><a href=""><img src="images/btm2.png" alt=""></a></li> -->
        </ul>
    </div>
     
@@ -453,21 +474,24 @@
 </footer>
 </div>
 
-<br><br><br><br><br><br>
-
-
+<br><br><br>
 
 
 <script>
-function digClock() {
-    var today=new Date();
-    var day=today.getMonth()+1 + "월 " + today.getDate() + "일 "; 
-    var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
-    document.getElementById("digClock").innerHTML=day+time;
-    setTimeout('digClock()', 1000);
-    }
-    digClock();
-</script>   
+    function digClock() {
+        var today=new Date();
+        var day=today.getMonth()+1 + "월 " + today.getDate() + "일 "; 
+        var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+        document.getElementById("digClock").innerHTML=day+time;
+        setTimeout('digClock()', 1000);
+        }
+        digClock();
+       
+     
+    
+    </script>   
+
+
 
 
 
