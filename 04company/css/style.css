@@ -144,12 +144,19 @@ body{
                         transform:translate(0,-15px);}
                                      
 
-
 .main3>ul>li{float: left;}
-.guide>li{background: #bac1e0;}
-.friends>li{background: #C1CEAC ;}
+
+.guide>li, .friends>li{background: #bac1e0; position: relative;}
+.guide>li>p, .friends>li>p{ position: absolute; top: 20px; left: 25px; color: white; }
+
+
+/* .friends>li{background: #C1CEAC ;position: relative;} */
 /* .guide li{background: #7a86b5;} */
 /* .friends li{background: #A1AC90;} */
+
+
+
+
 
 
  /* subage ------------   */
