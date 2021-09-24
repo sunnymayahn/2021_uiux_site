@@ -246,7 +246,7 @@ body{
 
 #headerTop .gnb>ul>li>a{display: block; line-height: 27px; font-size: 16px;
             text-align: center ;color: white; font-weight: bold; }
-#headerTop .gnb>ul>li:hover>a{background:slateblue ; _color: gray;}   
+#headerTop .gnb>ul>li:hover>a{_background:slateblue ; color: aqua;}   
 #headerTop .gnb>ul>li:hover .gnb{background: white;}
 
 
