@@ -24,9 +24,9 @@ $(document).ready(function(){
         slider2.goToPrevSlide();
     });
 
-    // $(".modal").colorbox({ 
-    //     rel:".modal"
-    // });
+    $(".modal").colorbox({ 
+        rel:".modal"
+    });
 
     $(".youtube").colorbox({
         iframe:true,
