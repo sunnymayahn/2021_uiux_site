@@ -57,10 +57,11 @@ body{
 
 .contents>ul>li{float: left;width: 25%;height: 310px;background: wheat;
   display: flex; justify-content: center;   align-items: center; 
-               /* flex-direction: column; */
-            }
+               /* flex-direction: column; */}
+
 .contents>ul>li>a{color: white;text-align: center;}
 .contents>ul>li>a>p{font-size: 18px;font-weight: bold;}
+.contents>ul>.icn:hover>a{transform:scale(1.1);}                
 
 
 
@@ -69,6 +70,7 @@ body{
 .contents>ul>li:nth-child(1){background: #6b97f7;}
  
 .contents>ul>li:nth-child(2){background: url(../images/maincell1.png);}
+.contents>ul>li:nth-child(2) img{width: 90px;height: 90px;}
 
 .contents>ul>li:nth-child(3){width: 50%;}
 .contents>ul>li:nth-child(4){background: #2926A6;}
@@ -145,7 +147,7 @@ body{
                                      
 
 
- /* main123 start  /main1은 교체 container tcher vs */
+ /* main2 start  /main1은 교체 container tcher vs */
  
 
  .main2>ul>li{width: 25%; height: 310px; float: left; }
@@ -178,11 +180,11 @@ body{
 /* .main2 li:hover .circle{ display: block;}  */
 
 .main2 li:hover .circle{ transform:translate(-50%,-50%) rotate(180deg)} 
+.modal{width: 800px;height: 450px;}
 
 .main3>ul>li{float: left;}
 
-/* .friends>li{background: #C1CEAC ;position: relative;} */
-/* .guide li{background: #7a86b5;} */
+/* .friends>li{background: #C1CEAC ;position: relative;} .guide li{background: #7a86b5;} */
 /* .friends li{background: #A1AC90;} */
 
 
@@ -336,7 +338,7 @@ body{
     transform:translateX(-50%);bottom: 0;
     border-radius: 10px;overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);}
- 
+
 
 
 
@@ -491,9 +493,6 @@ body{
 
      
 
-
-
-
         .sliderWrap .sdrImg1, .sliderWrap .sdrImg2, .sliderWrap .sdrImg3{
             height: 100vh;background-repeat: no-repeat; 
             background-position: center;background-size: cover;   } 
@@ -506,6 +505,7 @@ body{
         
 .contents{width: 100%;}
 .contents>ul>li{width: 50%;height: 250px;}
+
 
 .contents>ul>li:nth-child(3)
 /* .contents>ul>li:nth-child(6) */
