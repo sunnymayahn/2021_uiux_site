@@ -58,7 +58,7 @@
 
         layer.forEach(function(item,index){
            // data-speed / scroll / style.transform
-        let speed = item.dataset.speed;
+        let speed = item.dataset.speed; //div.layer data-speed값
            //item은 document.querySelectorAll(".layer")[0]~[8]    
         item.style.transform =`translate3D(0,${scroll/speed*4}px,0)` 
            //item.style.transform =`translateY(${scroll/speed*4}px)` 
