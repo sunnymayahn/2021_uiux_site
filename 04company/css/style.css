@@ -502,6 +502,17 @@ body{
         .bx-wrapper .bx-pager { bottom: 30px;}
 
 
+
+ 
+ .sliderWrap .slideTxt{width: 600px;}
+    .sliderWrap .slideTxt h1 {font-size: 30px;}
+    .sliderWrap .slideTxt h2{font-size: 25px;line-height: 40px;}
+    .sliderWrap .slideTxt h2:after{width: 200px;height: 3px;
+           }
+
+
+
+
         
 .contents{width: 100%;}
 .contents>ul>li{width: 50%;height: 250px;}
