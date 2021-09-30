@@ -1,6 +1,7 @@
 $(document).ready(function(){
     const slider1 = $(".slider").bxSlider({
-        controls:false
+        controls:false,
+        touchEnabled:false
     });
 
     $(".sliderWrap .nextBtn").click(function(){
