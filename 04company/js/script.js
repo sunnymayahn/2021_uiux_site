@@ -31,8 +31,8 @@ $(document).ready(function(){
 
     $(".youtube").colorbox({
         iframe:true,
-        innerWidth:800,
-        innerHeight:450
+        innerWidth:600,
+        innerHeight:330
     });
 
     // $(".toggle").on("이벤트명", 리스너);
