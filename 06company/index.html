@@ -40,6 +40,9 @@
     .portfolio{background: var(--bg-color1);}
     .portfolio .row img{border-radius: 10px;}
 
+
+    .customer .item{border-radius: 5px;}
+
     .footer .icon li+li{margin-left: 20px; } /* li+li 첫번째제외 두번째부터 적용 */
     .footer .icon a{
         display: block;width: 40px;height: 40px;background: var(--bg-color1); 
@@ -214,12 +217,12 @@
     <div class="container py-5">
         <h2 class="text-center mb-3">CUSTOMER</h2>
         <div class="owl-carousel owl-theme">
-            <div class="item d-flex p-4 bg-danger text-white">
-              <img src="assets/user.svg" alt="" class="img-fluid" style="width:150px"> 
+            <div class="item d-flex flex-row flex-lg-column  p-4 bg-danger text-white">
+              <img src="assets/user.svg" alt="" class="img-fluid d-block m-auto" style="width:150px"> 
               
-              <div class="ml-4">
+              <div class="ml-4 ml-lg-0">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, aut.</p>
-                <p><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
+                <p class="d-lg-none"><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
               </div>
             
             </div>
@@ -278,8 +281,7 @@
     
     <script>
         $(window).scroll(function(){
-            btns.removeClass("active");
-
+            
             let scrollY = $(window).scrollTop();
             if(scrollY > 200 ){
                 $(".headerWrap").addClass("fixed-top")
@@ -288,17 +290,18 @@
             }
         });
 
-
+//isotope
         const btns = $(".portfolio .btn-group .btn");
         btns.click(function(){
             let i = $(this).index()
 
             btns.removeClass("active");
-            btns.eq(i).addClass("active");
+            // btns.eq(i).addClass("active");
+             $(this).addClass("active");
 
 
 
-            let selector = btns.eq(i).attr("data-filter");
+            let selector =  $(this).attr("data-filter");
             console.log(selector)
 
             $(".portfolio .row").isotope({
@@ -306,22 +309,24 @@
             })
 
         })
-
+//isotope load
         window.onload =function(){
             $(".portfolio .btn-group #btn1").trigger("click");
         }
 
+// magnificpopup light box-modal
         $(".portfolio .row .popup_link").magnificPopup({type:"image"})
 
+// slider owlcarousel
         $(".customer .owl-carousel").owlCarousel({
             loop:true,
             margin:10,
-            // nav:true,
+            //nav:true,
             responsive:{
                 0:{ items:1     },
-                768:{items:2     }
+                992:{items:4     }
                
-    }
+        }
         })
     </script>
 
