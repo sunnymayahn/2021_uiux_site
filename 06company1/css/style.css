@@ -22,6 +22,11 @@
     #headerWrap .card-view{border-radius: 5px;overflow: hidden;
             box-shadow: 10px 10px 25px rgba(0,0,0,0.4) }
 
+
+            .navbar{transition:0.3s}
+            .navbar.onView{background: #000;}
+                   
+
     .slider .row{position: relative;}
     .slider .row h4{font-weight: normal;font-size: 18px;}
     .slider .slider-title{color: #7d97ad;font-size: 15px;}

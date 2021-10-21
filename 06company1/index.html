@@ -435,6 +435,53 @@
 
         
         });
+
+        
+        let winWidth = 0;
+        
+        
+        $(window).resize(function(){
+            winSize()
+            console.log(winWidth)
+        })
+        
+        function winSize(){
+            winWidth = $(window).width()
+            
+            let onView = true;
+        
+            if(winWidth < 768){
+                
+                $(".navbar-toggler").click(function(){
+                    if(onView == true){
+                        $(".navbar").addClass("onView")
+                        onView = false;
+                    }else{
+                        $(".navbar").removeClass("onView");
+                        onView = true;
+                    }
+                    
+                });
+            }else{
+                $(".navbar").removeClass("onView");
+                $(".navbar-collapse").removeClass("show");
+            }
+
+        }
+        winSize()
+
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop();
+            console.log(scrollY)
+            if(scrollY > 300){
+                $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+            }else{
+                $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+            }
+        })
+
+        
+        
     </script>
 
 </body>

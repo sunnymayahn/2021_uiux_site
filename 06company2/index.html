@@ -8,97 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- 
-
-<style>
-     :root{--bg-color1:#efefef;
-           --box-shadow:0 0 15px rgba(0,0,0,0.5)
-        }
-     
-
-    body{height: 100vh;font-size: 14px;}
-    li{list-style: none;}
-    ul{padding: 0;}
-    h4{font-size: 20px; font-weight: bold;}
+    <link rel="stylesheet" href="css/style.css">
     
-    #header{box-shadow: 0 0 20px rgba(0,0,0,0.2); }
-    .nav-link {font-weight: bold;}
-
-
-
-.slider div{height: 400px; _background: skyblue;position: relative;
-    background-repeat: no-repeat;background-position: center;
-    background-size: cover;}
-
-    .slider .sdr1{background: url(images/sdr1.png) no-repeat center;background-size: cover;}
-    .slider .sdr2{background: url(images/sdr2.png) no-repeat center;background-size: cover;}
-    .slider .sdr3{background: url(images/sdr3.png) no-repeat center;background-size: cover;}
-
-
-    .slider .row{position: relative;}
-    .slider .swiper-next{
-        position: absolute;top: 50%; transform: translateY(-50%); right: 0;
-        width: 20px; height: 38px;background-image: url(images/right-arrow.svg);z-index: 1}
-    .slider .swiper-prev{
-        position: absolute;top: 50%;transform: translateY(-50%);left: 0;
-         width: 20px; height: 38px;background-image: url(images/left-arrow.svg); z-index: 1;}
-
-
-
-    .banner .card{border: 0 none;border-radius: 5px; overflow: hidden;
-            box-shadow: 10px 10px 25px rgba(0,0,0,0.4);cursor: pointer;}
-    /* .banner .card .card-img{position: relative;}   */
-    .banner .card .mask{background: rgba(11, 34, 85, 0.6);position: absolute;
-            width: 100%;height: 100%; top: 0; transition: 0.3s;}     
-    .banner .card:hover .mask{opacity: 0;}   
-
-
-
-
-
-
-
-    .visual{background: url(images/sdr1.png) no-repeat center;
-        background-size: cover;}
-
-    .visualMid{background: url(images/bg_mid.png) no-repeat center fixed;
-        background-size: cover;}
-    
-    .gray{background: #f0f1f4 !important;}
-    .line:after{content: ""; display: block;width: 100px;height: 2px;background: #aaa;margin: 5px auto;}
-    .bg-shadow{box-shadow: 5px 5px 10px rgba(0,0,0,0.2);}
-
-       
-
-
-    .item p{position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);  font-size: 14px;}
-
-    .footer{background: #07294D;color: white;}
-    .footer .icon li+li{margin-left: 20px; } /* li+li 첫번째제외 두번째부터 적용 */
-    .footer .icon a{
-        display: block;width: 40px;height: 40px;background: var(--bg-color1); 
-        text-align: center;line-height: 35px;border-radius: 20px;
-          }
-
-    .footer .icon a:hover{box-shadow:var(--box-shadow) ;}
-    .footer .icon img{width: 20px;height: 20px;}
-    .address {font-size: 12px;line-height: 18px;}
-
-
-
-
-
-    @media screen and (min-width:768px){
-        .navbar .nav-item .dropdown-menu{display:none;margin-top: 0;}
-        .navbar .nav-item:hover .dropdown-menu{display:block}
-   
-        
-    }  /* media 768 */
-
-
-</style>
-
-
 </head>
   <body>
      
@@ -159,7 +70,7 @@
       </div>
 
 
-      <div class="visual py-5 mb-5">
+      <!-- <div class="visual py-5 mb-5">
           <div class="container text-white py-md-5">
               <h1>Lorem ipsum sit  <br>
                   consectetur  elit excepturi</h1>
@@ -168,7 +79,7 @@
                
           </div>
       </div>
- 
+  -->
 
 
 
@@ -179,47 +90,65 @@
               <div class="swiper-container swiper _col-md-12 _offset-md-1 ">
                   <div class="swiper-wrapper">
                       <!-- 1st -->
-                      <div class="swiper-slide">
+                      <div class="swiper-slide ">
                           <!-- <img src="images/sdr1.png " alt=""> -->
-                          <div class="sdr1 text-white _text-center p-5">
-                            <h1>1 Lorem ipsum sit  <br>
-                                consectetur  elit excepturi</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquam.</p>
-                            <a href="#" class="btn btn-primary d-none d-md-inline-block mb-3">Upload Project</a>
+                          <div class="sdr1 text-white p-5">
+                            <div class="sdrTxt _text-center _text-md-left ">
+                                <h2>Lorem ipsum sit  <br>
+                                    consectetur excepturi</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing aliquam.</p>
+                                <a href="#" class="btn btn-primary d-none d-md-inline-block mb-3">Upload Project</a>
+                            </div>
                           </div>
                       </div> <!-- 1st -->
-                          <!-- 1st -->
-                          <div class="swiper-slide">
-                            <!-- <img src="images/sdr1.png " alt=""> -->
-                            <div class="sdr2 text-white _text-center">
-                              <h1>2 Lorem ipsum sit  <br>
-                                  consectetur  elit excepturi</h1>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquam.</p>
+
+                      <div class="swiper-slide ">
+                        <div class="sdr2 text-white p-5">
+                          <div class="sdrTxt">
+                              <h2>Lorem ipsum sit  <br>
+                                  consectetur excepturi</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing aliquam.</p>
                               <a href="#" class="btn btn-primary d-none d-md-inline-block mb-3">Upload Project</a>
-                            </div>
-                        </div> <!-- 1st -->
-                              <!-- 1st -->
-                      <div class="swiper-slide">
-                        <!-- <img src="images/sdr1.png " alt=""> -->
-                        <div class="sdr3 text-white _text-center">
-                          <h1>3 Lorem ipsum sit  <br>
-                              consectetur  elit excepturi</h1>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquam.</p>
-                          <a href="#" class="btn btn-primary d-none d-md-inline-block mb-3">Upload Project</a>
+                          </div>
                         </div>
-                    </div> <!-- 1st -->  
+                    </div>
+
+                    <div class="swiper-slide ">
+                      <div class="sdr3 text-white p-5">
+                          <div class="sdrTxt">
+                              <h2>Lorem ipsum sit  <br>
+                                  consectetur excepturi</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing aliquam.</p>
+                              <a href="#" class="btn btn-primary d-none d-md-inline-block mb-3">Upload Project</a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide ">
+                   <div class="sdr4 text-white p-5">
+                          <div class="sdrTxt">
+                              <h2>Lorem ipsum sit  <br>
+                                  consectetur  elit excepturi</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing aliquam.</p>
+                              <a href="#" class="btn btn-primary d-none d-md-inline-block mb-3">Upload Project</a>
+                          </div>
+                        </div>
+                    </div>
+
 
 
                   </div>    <!-- swiper-wrapper -->
                  
               
               </div>
-                  <div class="swiper-next d-none d-md-block"></div>
-                  <div class="swiper-prev d-none d-md-block"></div>
+                  <div class="sdrBtn">
+                      <div class="swiper-next d-none d-md-block"></div>
+                      <div class="swiper-prev d-none d-md-block"></div>
+                  </div>
               
           </div>
   
-        </div>
+        <!-- </div>                        -->
     </div>
       
 
@@ -227,7 +156,7 @@
 
 
       <div class="imgmenu mb-5">
-        <div class="container py-5">
+        <div class="container py-2">
             <h4 class="text-center mb-3">다양한 분야의 클래스가 준비되어 있어요.</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item text-white">
@@ -267,48 +196,48 @@
 
  <!-- content3 -->
  <div class="content gray py-5 mb-5">
-     <div class="container px-3 px-md-0">
+     <div class="container _px-3 px-md-0">
         <h4 class="text-center _line mb-4">지금부터 준비하는 슬기로운 재테크 생활 </h4>
         <!-- <p class="text-center mb-5">Lorem ipsum dolor sit amet.</p> -->
          <div class="row mb-4 ">
-             <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+             <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                  <div class="card bg-shadow" >
                      <img src="images/card01.png" alt="" class="card-img-top img-fluid">
                      <div class="card-body">
                          <h5 class="card-title">Lorem ipsum dolor</h5>
                          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                         <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                         <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                         </div>
                  </div>
              </div>
 
-             <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+             <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                 <div class="card bg-shadow">
                     <img src="images/card02.png" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor</h5>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                        <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                        <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                        </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+            <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                 <div class="card bg-shadow">
                     <img src="images/card03.png" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor</h5>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                        <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                        <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                        </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+            <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                 <div class="card bg-shadow">
                     <img src="images/card04.png" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor</h5>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                        <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                        <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                        </div>
                 </div>
             </div>
@@ -316,44 +245,44 @@
          </div>
 
          <div class="row">
-            <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+            <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                 <div class="card bg-shadow">
                     <img src="images/card11.png" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor</h5>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                        <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                        <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                        </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+            <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                <div class="card bg-shadow">
                    <img src="images/card12.png" alt="" class="card-img-top img-fluid">
                    <div class="card-body">
                        <h5 class="card-title">Lorem ipsum dolor</h5>
                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                       <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                       <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                       </div>
                </div>
            </div>
-           <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+           <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                <div class="card bg-shadow">
                    <img src="images/card13.png" alt="" class="card-img-top img-fluid">
                    <div class="card-body">
                        <h5 class="card-title">Lorem ipsum dolor</h5>
                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                       <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                       <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                       </div>
                </div>
            </div>
-           <div class="col-6 col-md-3 mb-3 mb-md-0 ">
+           <div class="col-6 col-lg-3 mb-3 mb-lg-0 ">
                <div class="card bg-shadow">
                    <img src="images/card14.png" alt="" class="card-img-top img-fluid">
                    <div class="card-body">
                        <h5 class="card-title">Lorem ipsum dolor</h5>
                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                       <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline">view</a>
+                       <a href="#!" class="btn btn-primary btn-sm d-block d-lg-inline">view</a>
                       </div>
                </div>
            </div>
@@ -362,8 +291,6 @@
 
      </div>
  </div>
-
-
 
 
        
@@ -384,29 +311,52 @@
 
 <div class="banner mb-5">
     <div class="container">
+        <p class="text-center">Level Up Course</p>
+        <h4 class="text-center _line mb-4">커리어 성장을 위한 필수 코스</h4>
         <div class="row">
           
           <!-- #1 -->
           <div class="col-md-6 col-lg-4 mb-3">
               <div class="card">
                       <img src="images/path2.png" alt="" class="img-fluid w-100">
+                      <div class="cardTxt text-white p-3">
+                        <h3 class="cTitle ">팀장 레벨업 코스</h3>
+                        <p class=>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</p>
+                        <div class="btn text-white">#평생소장 #75%할인</div></div>
                       <div class="mask"></div>  
               </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
             <div class="card">
                     <img src="images/path3.png" alt="" class="img-fluid w-100">
+                    <div class="cardTxt text-white p-3">
+                        <h3 class="cTitle ">주니어 레벨업 코스</h3>
+                        <p class=>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</p>
+                        <div class="btn text-white">#평생소장 #75%할인</div></div>
                     <div class="mask"></div>  
             </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
             <div class="card">
                     <img src="images/path4.png" alt="" class="img-fluid w-100">
+                    <div class="cardTxt text-white p-3">
+                        <h3 class="cTitle ">영어 레벨업 코스</h3>
+                        <p class=>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</p>
+                        <div class="btn text-white">#평생소장 #75%할인</div></div>
+                    <div class="mask"></div>  
+            </div>
+        </div>
+        <div class="col-md-6 d-md-block d-sm-none d-lg-none  mb-3">
+            <div class="card">
+                    <img src="images/path1.png" alt="" class="img-fluid w-100">
+                    <div class="cardTxt text-white p-3">
+                        <h3 class="cTitle ">디지털마케터 레벨업 코스</h3>
+                        <p class=>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</p>
+                        <div class="btn text-white">#평생소장 #75%할인</div></div>
                     <div class="mask"></div>  
             </div>
         </div>
 
-
         </div>
     </div>
 </div>
@@ -414,108 +364,69 @@
 
 
 
- <!-- footer -->
 
- 
-<div class="footer">
+
+
+<footer class="footer _py-5">
     <div class="container py-5">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-left mg-5 mb-3">
-                <img src="images/logowhite.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6 mb-3 mb-md-0">
-                
-                <ul class="icon d-flex justify-content-center justify-content-md-end">
-                    <li><a href="#!"><img src="assets/facebook.svg" alt=""></a></li>
-                    <li><a href="#!"><img src="assets/twitter.svg" alt=""></a></li>
-                    <li><a href="#!"><img src="assets/instagram.svg" alt=""></a></li>
-                    <li><a href="#!"><img src="assets/linkedin.svg" alt=""></a></li>
-                    <li><a href="#!"><img src="assets/youtube.svg" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-
-
-<div class="address _text-center mb-5 pt-3" style="border-top:1px solid #ccc ;">
-(주)휴넷  대표이사 조영탁<br>
-사업자등록번호 : 214-86-38356 통신판매업신고 : 제2008-서울구로-0308  사업자정보확인 ><br>
-(08389) 서울시 구로구 디지털로 26길 5(구로3동 235-2) 에이스하이엔드타워 1차 8층| FAX : 02-6220-2581 <br>
-©hunet. All right Reserved.
-</div>
-
-    </div>
-</div>
-
-
-
-<footer class="footer pb-5">
-    <div class="container">
-        <div class="row px-3 px-md-0">
-            <div class="col-lg-3 mb-3">
-                <a href="#!"><img src="images/udacity-logo.svg" alt=""></a>
+        <div class="row _px-2 px-md-0">
+            <div class="col-lg-5  text-center text-md-left mb-3 mb-sm-5">
+                <a href="#!"><img src="images/logowhite.png" alt=""></a>
             </div>
             <div class="col-6 col-lg">
-                <h4>COMPANY</h4>
+                <h6>SERVICE</h6>
                 <ul>
-                    <li><a href="#!">menu1</a></li>
-                    <li><a href="#!">menu2</a></li>
-                    <li><a href="#!">menu3</a></li>
-                    <li><a href="#!">menu4</a></li>
-                    <li><a href="#!">menu5</a></li>
+                    <li><a href="#!">서비스소개</a></li>
+                    <li><a href="#!">공지사항</a></li>
+                    
                 </ul>
             </div>
             <div class="col-6 col-lg">
-                <h4>CATALOG</h4>
+                <h6>MASTER</h6>
                 <ul>
-                    <li><a href="#!">menu1</a></li>
-                    <li><a href="#!">menu2</a></li>
-                    <li><a href="#!">menu3</a></li>
-                    <li><a href="#!">menu4</a></li>
-                    <li><a href="#!">menu5</a></li>
+                    <li><a href="#!">마스터소개</a></li>
+                    <li><a href="#!">마스터지원</a></li>
+
                 </ul>
             </div>
             <div class="col-6 col-lg">
-                <h4>BUSINESS</h4>
+                <h6>B2B</h6>
                 <ul>
-                    <li><a href="#!">menu1</a></li>
-                    <li><a href="#!">menu2</a></li>
-                    <li><a href="#!">menu3</a></li>
-                    <li><a href="#!">menu4</a></li>
-                    <li><a href="#!">menu5</a></li>
+                    <li><a href="#!">기업교육문의</a></li>
+                    <li><a href="#!">제휴문의</a></li>
+                  
                 </ul>
             </div>
             <div class="col-6 col-lg">
-                <h4>COMMUNITY</h4>
+                <h6>CUSTOMER</h6>
                 <ul>
-                    <li><a href="#!">menu1</a></li>
-                    <li><a href="#!">menu2</a></li>
-                    <li><a href="#!">menu3</a></li>
-                    <li><a href="#!">menu4</a></li>
-                    <li><a href="#!">menu5</a></li>
+                    <li><a href="#!">고객센터</a></li>
+                    <li><a href="#!">문의하기</a></li>
+                 
                 </ul>
             </div>
            
         </div>
         
         
-        <hr>
-       <div class="row pb-5">
+       <hr>
+       <div class="row _pb-3">
            <div class="col-md-6 mb-3">
                <ul class="nav justify-content-center justify-content-md-start">
                    <li class="nav-item"><a href="#!">Privacy</a></li>
-                   <li class="nav-item px-3">/</li>
+                   <li class="nav-item px-2">|</li>
                    <li class="nav-item"><a href="#!">Terms</a></li>
-                   <li class="nav-item px-3">/</li>
+                   <li class="nav-item px-2">|</li>
                    <li class="nav-item"><a href="#!">Site-map</a></li>
                    
                 </ul>
            </div>
-           <div class="col-md-6">
-            <ul class="nav justify-content-center justify-content-md-end">
-                <li class="nav-item px-3"><a href="#!"><i class="fab fa-facebook-f"></i> </a></li>
-                <li class="nav-item px-3"><a href="#!"><i class="fab fa-google"></i> </a></li>
-                <li class="nav-item px-3"><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                <li class="nav-item px-3"><a href="#!"><i class="fab fa-github"></i> </a></li>
+           <div class="col-md-6 ">
+            <ul class="nav justify-content-center justify-content-md-end _bg-info">
+                <li class="nav-item px-2"><a href="#!"><i class="fab fa-facebook-f"></i> </a></li>
+                <li class="nav-item px-2"><a href="#!"><i class="fab fa-google"></i> </a></li>
+                <li class="nav-item px-2"><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item px-2 "><a href="#!"><i class="fab fa-github"></i> </a></li>
              
              </ul>
             </div>
@@ -523,8 +434,8 @@
         </div>
 
 
-        <div class="address _text-center mb-5 pt-3" _style="border-top:1px solid #ccc ;">
-            (주)휴넷  대표이사 조영탁<br>
+        <div class="address _text-md-left mb-5 pt-3" _style="border-top:1px solid #ccc ;">
+            <b>(주)휴넷</b> 대표이사 조영탁<br>
             사업자등록번호 : 214-86-38356 통신판매업신고 : 제2008-서울구로-0308  사업자정보확인 ><br>
             (08389) 서울시 구로구 디지털로 26길 5(구로3동 235-2) 에이스하이엔드타워 1차 8층| FAX : 02-6220-2581 <br>
             ©hunet. All right Reserved.
@@ -565,8 +476,9 @@
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             }
-
         });
+
+
     </script>  
 
 
@@ -585,13 +497,23 @@
         });
 
 
+        // $(window).scroll(function(){
+        //     let scrollY = $(window).scrollTop();
+        //     console.log(scrollY)
+        //     if(scrollY > 300){
+        //         $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+        //     }else{
+        //         $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+        //     }
+        // })
+
         $('.owl-carousel').owlCarousel({
                loop:true,
                margin:5,
-               nav:true,
+               //nav:true,
                 responsive:{
                 0:{ items:2     },
-                992:{items:4     }
+                992:{items:5     }
                
     }
 })
